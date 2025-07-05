@@ -8,6 +8,7 @@ import TokenomicsSection from "../components/TokenomicsSection";
 import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import RoadmapSection from "../components/RoadmapSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <AboutSection />
         <HowToBuySection />
         <TokenomicsSection />
+        <RoadmapSection />
         <FAQSection />
         <ContactSection />
       </main>
