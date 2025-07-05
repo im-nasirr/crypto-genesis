@@ -138,7 +138,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="card-hero text-center mb-12">
+        {/* <div className="card-hero text-center mb-12">
           <h3 className="text-xl font-semibold text-gradient mb-3">
             Stay Updated
           </h3>
@@ -154,10 +154,10 @@ const Footer = () => {
             />
             <button className="btn-hero px-8 py-3">Subscribe</button>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Section */}
-        <div className="border-t border-border/50 pt-8">
+        {/* <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
               © 2024 CryptoPresale. All rights reserved.
@@ -189,10 +189,10 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Security Disclaimer */}
-        <div className="mt-8 p-4 bg-muted/30 rounded-lg border border-border/50">
+        {/* <div className="mt-8 p-4 bg-muted/30 rounded-lg border border-border/50">
           <div className="text-center text-xs text-muted-foreground">
             <p className="mb-2">
               ⚠️ <strong>Important:</strong> Cryptocurrency investments are
@@ -205,7 +205,7 @@ const Footer = () => {
               regulations before participating.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
