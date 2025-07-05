@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 interface TimeLeft {
   days: number;
@@ -8,9 +8,13 @@ interface TimeLeft {
 }
 
 const CountdownTimer = () => {
-  // Set presale end date to 30 days from now
-  const presaleEndDate = new Date();
-  presaleEndDate.setDate(presaleEndDate.getDate() + 30);
+  // Calculate presale end date once using useMemo to prevent recalculation on every render
+  const presaleEndDate = useMemo(() => {
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 30);
+    endDate.setHours(23, 59, 59, 999); // Set to end of day
+    return endDate;
+  }, []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -19,28 +23,38 @@ const CountdownTimer = () => {
     seconds: 0,
   });
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const difference = presaleEndDate.getTime() - now;
 
       if (difference > 0) {
-        setTimeLeft({
+        const newTimeLeft = {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60),
-        });
+        };
+        setTimeLeft(newTimeLeft);
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
+
+      if (!isLoaded) {
+        setIsLoaded(true);
+      }
     };
 
+    // Calculate immediately
     calculateTimeLeft();
+
+    // Set up interval
     const timer = setInterval(calculateTimeLeft, 1000);
 
     return () => clearInterval(timer);
-  }, [presaleEndDate]);
+  }, [presaleEndDate, isLoaded]);
 
   const timeUnits = [
     { label: "Days", value: timeLeft.days },
@@ -67,7 +81,7 @@ const CountdownTimer = () => {
             className="text-center p-4 bg-secondary/50 rounded-xl border border-primary/20 hover:border-primary/40 transition-colors"
           >
             <div className="text-3xl md:text-4xl font-bold text-gradient mb-1">
-              {unit.value.toString().padStart(2, "0")}
+              {isLoaded ? unit.value.toString().padStart(2, "0") : "--"}
             </div>
             <div className="text-sm text-muted-foreground uppercase tracking-wider">
               {unit.label}
@@ -80,6 +94,15 @@ const CountdownTimer = () => {
         <button className="btn-hero flex-1">Join Presale Now</button>
         <button className="btn-ghost flex-1">Read Whitepaper</button>
       </div>
+
+      {/* Debug info - remove in production */}
+      {process.env.NODE_ENV === "development" && (
+        <div className="mt-4 p-2 bg-muted/20 rounded text-xs text-muted-foreground">
+          <div>End Date: {presaleEndDate.toLocaleString()}</div>
+          <div>Current: {new Date().toLocaleString()}</div>
+          <div>Loaded: {isLoaded ? "Yes" : "No"}</div>
+        </div>
+      )}
     </div>
   );
 };

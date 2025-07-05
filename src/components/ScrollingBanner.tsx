@@ -1,3 +1,5 @@
+import React from "react";
+
 const ScrollingBanner = () => {
   const scrollingTexts = [
     "🚀 LIMITED PRESALE – JOIN NOW",

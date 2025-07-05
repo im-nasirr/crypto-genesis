@@ -1,3 +1,4 @@
+import React from "react";
 import ScrollingBanner from "../components/ScrollingBanner";
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";

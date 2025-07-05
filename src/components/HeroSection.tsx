@@ -1,3 +1,4 @@
+import React from "react";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
