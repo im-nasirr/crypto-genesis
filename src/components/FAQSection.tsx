@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 const FAQSection = () => {
@@ -5,44 +6,24 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What is CryptoPresale and what problem does it solve?",
+      question: "1. What is Tip Life Coin (TLC)?",
       answer:
-        "CryptoPresale is a revolutionary blockchain platform that addresses scalability, security, and cost issues in current DeFi ecosystems. Our advanced consensus mechanism enables lightning-fast transactions with minimal fees while maintaining the highest security standards.",
+        "Tip Life Coin (TLC) is a Solana-based cryptocurrency designed to revolutionize the global tipping economy. It enables fast, low-cost, and secure peer-to-peer tipping, especially in sports and service industries.",
     },
     {
-      question: "How do I participate in the presale?",
+      question: "2. How is TLC different from other cryptocurrencies?",
       answer:
-        "Simply connect your Web3 wallet (MetaMask, Trust Wallet, etc.), choose your contribution amount in ETH, BNB, or USDT, and confirm your transaction. You'll receive your tokens immediately after the presale ends.",
+        "Unlike general-purpose tokens, TLC is purpose-built for tipping. It addresses inefficiencies in traditional tipping systems by offering instant, transparent, and affordable transactions through the MyTipLife platform..",
     },
     {
-      question: "What are the presale bonus tiers?",
+      question: "3. Why was Solana chosen as the blockchain for TLC?",
       answer:
-        "Early investors receive up to 200% bonus tokens: First 24 hours: +200%, First week: +150%, First two weeks: +100%, Remaining presale period: +50% bonus tokens.",
+        "Solana offers extremely fast transaction speeds (up to 65,000 TPS), sub-second finality, low fees, and energy efficiency—making it ideal for high-volume, micro-transaction environments like tipping.",
     },
     {
-      question: "When will tokens be available for trading?",
+      question: "4.What are the use cases for TLC tokens?",
       answer:
-        "Tokens will be available for trading immediately after the presale ends. We'll list on major DEXs like Uniswap and PancakeSwap first, followed by centralized exchanges within 30 days.",
-    },
-    {
-      question: "What is the minimum and maximum purchase amount?",
-      answer:
-        "Minimum purchase is 0.1 ETH (or equivalent in other accepted currencies). Maximum purchase is 10 ETH to ensure fair distribution among all participants.",
-    },
-    {
-      question: "Is the smart contract audited?",
-      answer:
-        "Yes, our smart contracts have been thoroughly audited by leading security firms including CertiK and Audit Request. All audit reports are publicly available on our website.",
-    },
-    {
-      question: "What utilities will the token have?",
-      answer:
-        "CPS tokens provide governance rights, staking rewards up to 200% APY, fee discounts on our platform, access to exclusive features, and participation in ecosystem decisions.",
-    },
-    {
-      question: "How is the team committed to the project?",
-      answer:
-        "Team tokens are locked for 6 months post-launch with a 24-month linear vesting schedule. Our team has extensive experience in blockchain development and has previously launched successful projects.",
+        "TLC tokens can be used for tipping, redeemed for products or services in the MyTipLife ecosystem, used for governance voting, and in the future may support staking and liquidity rewards.",
     },
   ];
 
