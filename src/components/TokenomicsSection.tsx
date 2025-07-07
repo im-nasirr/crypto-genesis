@@ -365,7 +365,7 @@ const TokenomicsSection = () => {
               </h3>
               <div className="space-y-4">
                 {[
-                  { label: "Token Name", value: "TLC", icon: "🪙" },
+                  { label: "Token Name", value: "Tip Life Coin", icon: "🪙" },
                   { label: "Symbol", value: "TLC", icon: "🔤" },
                   { label: "Total Supply", value: "100M TLC", icon: "📊" },
                   { label: "Blockchain", value: "Solana", icon: "⚡" },
