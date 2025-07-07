@@ -111,23 +111,23 @@ const TokenomicsSection = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Token Name:</span>
-                  <span className="font-semibold">CryptoPresale</span>
+                  <span className="font-semibold">TLC</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Symbol:</span>
-                  <span className="font-semibold">CPS</span>
+                  <span className="font-semibold">TLC</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Total Supply:</span>
-                  <span className="font-semibold">{totalSupply} CPS</span>
+                  <span className="font-semibold">200M TLC</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Blockchain:</span>
-                  <span className="font-semibold">Ethereum</span>
+                  <span className="font-semibold">Solana</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Standard:</span>
-                  <span className="font-semibold">ERC-20</span>
+                  <span className="font-semibold">SPL</span>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ const TokenomicsSection = () => {
                         {item.percentage}%
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        {item.amount} CPS
+                        {item.amount} TLC
                       </div>
                     </div>
                   </div>
