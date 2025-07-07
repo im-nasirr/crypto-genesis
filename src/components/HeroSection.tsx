@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 lg:pt-0"
     >
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20"></div>
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Countdown Timer */}
-          <div className="flex justify-center lg:justify-center">
+          <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md">
               <CountdownTimer />
             </div>

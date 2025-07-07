@@ -3,39 +3,39 @@ import React from "react";
 const AboutSection = () => {
   const features = [
     {
-      icon: "⚡",
-      title: "Lightning Fast",
+      icon: "🚀",
+      title: "Built on Solana",
       description:
-        "Process transactions in milliseconds with our advanced blockchain technology.",
+        "Enjoy blazing-fast transactions with ultra-low fees, thanks to Solana’s powerful blockchain.",
     },
     {
-      icon: "🔒",
-      title: "Ultra Secure",
+      icon: "💬",
+      title: "Instant & Transparent Tipping",
       description:
-        "Military-grade encryption ensures your assets are always protected.",
-    },
-    {
-      icon: "🌍",
-      title: "Global Access",
-      description:
-        "Trade anywhere, anytime with our decentralized global network.",
+        "Send and receive tips in real-time with full transparency and traceability.",
     },
     {
       icon: "💰",
-      title: "Low Fees",
+      title: "Fair & Direct Payments",
       description:
-        "Enjoy minimal transaction costs compared to traditional networks.",
+        "Eliminate middlemen—TLC ensures more of every tip reaches its intended recipient.",
     },
     {
-      icon: "🤝",
-      title: "Community Driven",
+      icon: "🌍",
+      title: "Global Accessibility",
+      description:
+        "Seamlessly tip anyone, anywhere, with cross-border capability and no banking friction.",
+    },
+    {
+      icon: "🎁",
+      title: "Exclusive Rewards & Utility",
+      description:
+        "Unlock perks like discounts, governance rights, and ecosystem benefits as a token holder.",
+    },
+    {
+      icon: "👥",
+      title: "Community-Powered",
       description: "Governed by the community, for the community's benefit.",
-    },
-    {
-      icon: "📈",
-      title: "High Yield",
-      description:
-        "Earn passive income through our innovative staking mechanisms.",
     },
   ];
 
@@ -47,12 +47,11 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Choose <span className="text-gradient">CryptoPresale</span>?
+            Why Choose <span className="text-gradient">TLC</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're building the next generation of blockchain technology that
-            combines speed, security, and scalability in one revolutionary
-            platform.
+            Discover the benefits of TLC—fast, fair, global tipping powered by
+            blockchain, built for sports and services.
           </p>
         </div>
 
@@ -75,15 +74,13 @@ const AboutSection = () => {
         <div className="card-hero max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-gradient mb-6">Our Vision</h3>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            To create a decentralized financial ecosystem that empowers
-            individuals worldwide with fast, secure, and affordable blockchain
-            solutions. We believe in a future where everyone has access to
-            cutting-edge financial technology, regardless of their location or
-            background.
+            Our vision is to revolutionize global tipping through blockchain
+            technology, making gratitude instant, fair, and borderless. We aim
+            to empower fans and service workers with transparent, real-time
+            rewards in a decentralized economy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-hero">Join Our Mission</button>
-            <button className="btn-ghost">Learn More</button>
+            <button className="btn-hero">Read Whitepaper</button>
           </div>
         </div>
       </div>

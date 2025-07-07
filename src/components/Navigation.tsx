@@ -14,23 +14,21 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-12 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
-      <div className="container mx-auto px-4">
+    <nav className="fixed top-12 left-0 right-0 z-50  ">
+      <div className="container mx-auto px-4 py-2 lg:rounded-full lg:border border-gray-800 backdrop-blur-3xl lg:backdrop-blur-xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">
-                C
+                T
               </span>
             </div>
-            <span className="text-xl font-bold text-gradient">
-              CryptoPresale
-            </span>
+            <span className="text-xl font-bold text-gradient">TipLife</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -43,14 +41,14 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <button className="btn-hero">Buy Presale</button>
+          <div className="hidden lg:block">
+            <button className="btn-hero rounded-full py-2">Buy Presale</button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
               <span
@@ -74,7 +72,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border/50">
+          <div className="lg:hidden py-4 border-t border-border/50 h-screen">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
@@ -86,7 +84,6 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <button className="btn-hero py-2 mt-4">Buy Presale</button>
             </div>
           </div>
         )}
