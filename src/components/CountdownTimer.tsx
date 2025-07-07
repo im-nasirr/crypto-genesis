@@ -112,12 +112,12 @@ const CountdownTimer = () => {
           </a>
         </button>
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://discord.com/mytiplife">
+          <a href="https://discord.com/invite/MyTipLife">
             <FaDiscord />
           </a>
         </button>
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://www.instagram.com/mytiplife">
+          <a href="https://instagram.com/MyTipLife">
             <FaInstagram />
           </a>
         </button>

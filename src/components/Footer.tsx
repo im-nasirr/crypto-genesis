@@ -6,41 +6,52 @@ const Footer = () => {
       { label: "About", href: "#about" },
       { label: "Whitepaper", href: "#" },
       { label: "Roadmap", href: "#" },
-      { label: "Team", href: "#" },
     ],
     presale: [
       { label: "How to Buy", href: "#how-to-buy" },
       { label: "Tokenomics", href: "#tokenomics" },
-      { label: "Audit Report", href: "#" },
-      { label: "Terms & Conditions", href: "#" },
-    ],
-    community: [
-      { label: "Telegram", href: "#" },
-      { label: "Twitter", href: "#" },
-      { label: "Discord", href: "#" },
-      { label: "Medium", href: "#" },
     ],
     support: [
       { label: "FAQ", href: "#faq" },
       { label: "Contact", href: "#contact" },
-      { label: "Help Center", href: "#" },
-      { label: "Privacy Policy", href: "#" },
+    ],
+    community: [
+      { label: "Telegram", href: "https://t.me/MyTipLifeOfficial" },
+      { label: "Twitter", href: "https://x.com/MyTipLife" },
+      { label: "Discord", href: "https://discord.com/invite/MyTipLife" },
+      { label: "Facebook", href: "https://facebook.com/MyTipLifeOfficial" },
     ],
   };
 
   const socialIcons = [
-    { name: "Telegram", icon: "📱", href: "#" },
-    { name: "Twitter", icon: "🐦", href: "#" },
-    { name: "Discord", icon: "💬", href: "#" },
-    { name: "Medium", icon: "📝", href: "#" },
-    { name: "GitHub", icon: "💻", href: "#" },
-    { name: "LinkedIn", icon: "💼", href: "#" },
+    { name: "Telegram", icon: "📱", href: "https://t.me/MyTipLifeOfficial" },
+    { name: "Twitter", icon: "🐦", href: "https://x.com/MyTipLife" },
+    {
+      name: "Discord",
+      icon: "💬",
+      href: "https://discord.com/invite/MyTipLife",
+    },
+    {
+      name: "LinkedIn",
+      icon: "💼",
+      href: "https://linkedin.com/company/MyTipLife",
+    },
+    {
+      name: "Facebook",
+      icon: "📘",
+      href: "https://facebook.com/MyTipLifeOfficial",
+    },
+    {
+      name: "Instagram",
+      icon: "📷",
+      href: "https://instagram.com/MyTipLife",
+    },
   ];
 
   return (
     <footer className="bg-gradient-to-t from-secondary/20 to-background border-t border-border/50">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 lg:gap-12 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
@@ -49,9 +60,7 @@ const Footer = () => {
                   C
                 </span>
               </div>
-              <span className="text-xl font-bold text-gradient">
-                CryptoPresale
-              </span>
+              <span className="text-xl font-bold text-gradient">MyTipLife</span>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Building the future of decentralized finance with fast, secure,
@@ -72,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div>
+          <div className="lg:ml-6">
             <h4 className="font-semibold text-foreground mb-4">Project</h4>
             <ul className="space-y-2">
               {footerLinks.project.map((link, index) => (
@@ -108,22 +117,6 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Community</h4>
             <ul className="space-y-2">
               {footerLinks.community.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Support</h4>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}

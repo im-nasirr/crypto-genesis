@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -29,26 +30,26 @@ const ContactSection = () => {
     {
       name: "Telegram",
       icon: "📱",
-      url: "#",
-      label: "@CryptoPresaleOfficial",
+      url: "https://t.me/MyTipLifeOfficial",
+      label: "@MyTipLifeOfficial",
     },
     {
       name: "Twitter",
       icon: "🐦",
-      url: "#",
-      label: "@CryptoPresale",
+      url: "https://x.com/MyTipLife",
+      label: "@MyTipLife",
     },
     {
       name: "Discord",
       icon: "💬",
-      url: "#",
-      label: "discord.gg/cryptopresale",
+      url: "https://discord.com/invite/MyTipLife",
+      label: "discord.com/invite/MyTipLife",
     },
     {
       name: "Email",
       icon: "📧",
-      url: "mailto:contact@cryptopresale.com",
-      label: "contact@cryptopresale.com",
+      url: "mailto:info@mytiplife.com",
+      label: "info@mytiplife.com",
     },
   ];
 
@@ -164,32 +165,6 @@ const ContactSection = () => {
                     </div>
                   </a>
                 ))}
-              </div>
-            </div>
-
-            <div className="card-feature">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">
-                Business Hours
-              </h3>
-              <div className="space-y-2 text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM UTC</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>10:00 AM - 4:00 PM UTC</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-              <div className="mt-4 p-3 bg-accent/10 rounded-lg border border-accent/20">
-                <div className="text-sm text-accent">
-                  💡 For urgent presale inquiries, our Telegram community is
-                  monitored 24/7!
-                </div>
               </div>
             </div>
 
