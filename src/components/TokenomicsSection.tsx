@@ -64,7 +64,7 @@ const TokenomicsSection = () => {
                   <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-gradient">
-                        100M
+                        200M
                       </div>
                       <div className="text-sm text-muted-foreground">
                         Total Supply
@@ -164,26 +164,6 @@ const TokenomicsSection = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="card-hero">
-              <h4 className="text-lg font-semibold mb-3 text-gradient">
-                Vesting Schedule
-              </h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Presale Tokens:</span>
-                  <span>Unlocked at TGE</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Team Tokens:</span>
-                  <span>6-month lock, then 24-month vesting</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Ecosystem Fund:</span>
-                  <span>12-month linear vesting</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
