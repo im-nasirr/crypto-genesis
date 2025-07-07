@@ -286,9 +286,7 @@ const TokenomicsSection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
               <h3 className="text-2xl font-bold mb-10 text-white text-center flex items-center justify-center gap-3">
-                <div className="w-8 h-1 bg-gradient-to-r from-primary to-accent rounded-full"></div>
                 Token Distribution
-                <div className="w-8 h-1 bg-gradient-to-r from-accent to-primary rounded-full"></div>
               </h3>
 
               {/* Fixed container for pie chart */}
@@ -360,7 +358,6 @@ const TokenomicsSection = () => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
               <h3 className="text-xl font-semibold mb-8 text-foreground flex items-center">
-                <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full mr-4"></div>
                 Token Details
               </h3>
               <div className="space-y-4">
@@ -392,7 +389,6 @@ const TokenomicsSection = () => {
             {/* Distribution Breakdown */}
             <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
               <h4 className="text-xl font-semibold text-foreground flex items-center mb-8">
-                <div className="w-1 h-8 bg-gradient-to-b from-accent to-primary rounded-full mr-4"></div>
                 Distribution Breakdown
               </h4>
               <div className="space-y-6">

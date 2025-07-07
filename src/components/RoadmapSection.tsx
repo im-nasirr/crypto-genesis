@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import {
   Lightbulb,
@@ -10,6 +10,36 @@ import {
 } from "lucide-react";
 
 const RoadmapSection = () => {
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    cardRefs.current.forEach((ref, index) => {
+      if (ref) {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setVisibleCards((prev) => new Set(prev).add(index));
+            }
+          },
+          {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px",
+          }
+        );
+
+        observer.observe(ref);
+        observers.push(observer);
+      }
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
   const roadmapPhases = [
     {
       phase: "Phase 1",
@@ -82,10 +112,10 @@ const RoadmapSection = () => {
     <section className="py-20 px-4 bg-gradient-to-br from-background to-secondary/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold pb-8 text-gradient">
             Project Roadmap
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl  mx-auto">
             Our strategic plan to revolutionize the crypto space with innovative
             solutions and sustainable growth
           </p>
@@ -99,13 +129,35 @@ const RoadmapSection = () => {
             {roadmapPhases.map((phase, index) => (
               <div
                 key={index}
+                ref={(el) => {
+                  cardRefs.current[index] = el;
+                }}
                 className={`relative flex items-center ${
                   index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } animate-fade-in`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+                } transition-all duration-700 ease-out transform ${
+                  visibleCards.has(index)
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+                style={{
+                  transitionDelay: visibleCards.has(index)
+                    ? `${(index % 3) * 100}ms`
+                    : "0ms",
+                }}
               >
                 {/* Timeline Node */}
-                <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-background bg-gradient-to-r from-primary to-accent flex items-center justify-center animate-glow-pulse">
+                <div
+                  className={`absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-background bg-gradient-to-r from-primary to-accent flex items-center justify-center transition-all duration-500 ${
+                    visibleCards.has(index)
+                      ? "animate-glow-pulse scale-100"
+                      : "scale-75 opacity-50"
+                  }`}
+                  style={{
+                    transitionDelay: visibleCards.has(index)
+                      ? `${(index % 3) * 100 + 200}ms`
+                      : "0ms",
+                  }}
+                >
                   <div className="w-2 h-2 bg-white rounded-full"></div>
                 </div>
 
@@ -117,18 +169,44 @@ const RoadmapSection = () => {
                       : "md:ml-auto md:pl-8"
                   }`}
                 >
-                  <div className="card-hero hover:border-primary/40 transition-all duration-300 group">
+                  <div
+                    className={`card-hero hover:border-primary/40 transition-all duration-500 group transform ${
+                      visibleCards.has(index)
+                        ? "hover:scale-105 hover:-translate-y-1"
+                        : ""
+                    }`}
+                  >
                     <div className="flex items-start gap-4">
                       <div
                         className={`p-3 rounded-xl border-2 ${getStatusColor(
                           phase.status
-                        )} transition-all duration-300 group-hover:scale-110`}
+                        )} transition-all duration-500 ${
+                          visibleCards.has(index)
+                            ? "group-hover:scale-110 group-hover:rotate-3"
+                            : ""
+                        }`}
+                        style={{
+                          transitionDelay: visibleCards.has(index)
+                            ? `${(index % 3) * 100 + 300}ms`
+                            : "0ms",
+                        }}
                       >
                         <phase.icon className="w-6 h-6" />
                       </div>
 
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
+                        <div
+                          className={`flex items-center gap-2 mb-2 transition-all duration-500 transform ${
+                            visibleCards.has(index)
+                              ? "translate-x-0"
+                              : "translate-x-4"
+                          }`}
+                          style={{
+                            transitionDelay: visibleCards.has(index)
+                              ? `${(index % 3) * 100 + 400}ms`
+                              : "0ms",
+                          }}
+                        >
                           <span className="text-sm font-semibold text-primary px-3 py-1 bg-primary/10 rounded-full border border-primary/20">
                             {phase.phase}
                           </span>
@@ -137,11 +215,33 @@ const RoadmapSection = () => {
                           </span>
                         </div>
 
-                        <h3 className="text-xl font-bold text-gradient mb-2">
+                        <h3
+                          className={`text-xl font-bold text-gradient mb-2 transition-all duration-500 transform ${
+                            visibleCards.has(index)
+                              ? "translate-x-0"
+                              : "translate-x-4"
+                          }`}
+                          style={{
+                            transitionDelay: visibleCards.has(index)
+                              ? `${(index % 3) * 100 + 500}ms`
+                              : "0ms",
+                          }}
+                        >
                           {phase.title}
                         </h3>
 
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p
+                          className={`text-muted-foreground leading-relaxed transition-all duration-500 transform ${
+                            visibleCards.has(index)
+                              ? "translate-x-0"
+                              : "translate-x-4"
+                          }`}
+                          style={{
+                            transitionDelay: visibleCards.has(index)
+                              ? `${(index % 3) * 100 + 600}ms`
+                              : "0ms",
+                          }}
+                        >
                           {phase.description}
                         </p>
                       </div>
@@ -150,7 +250,17 @@ const RoadmapSection = () => {
                 </div>
 
                 {/* Mobile Timeline Connector */}
-                <div className="md:hidden absolute left-4 top-8 w-8 h-0.5 bg-gradient-to-r from-primary to-transparent"></div>
+                <div
+                  className={`md:hidden absolute left-4 top-8 w-8 h-0.5 bg-gradient-to-r from-primary to-transparent transition-all duration-500 ${
+                    visibleCards.has(index) ? "scale-x-100" : "scale-x-0"
+                  }`}
+                  style={{
+                    transformOrigin: "left",
+                    transitionDelay: visibleCards.has(index)
+                      ? `${(index % 3) * 100 + 700}ms`
+                      : "0ms",
+                  }}
+                ></div>
               </div>
             ))}
           </div>
@@ -158,7 +268,7 @@ const RoadmapSection = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="card-hero max-w-2xl mx-auto">
+          <div className="card-hero max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gradient mb-4">
               Ready to Join Our Journey?
             </h3>
