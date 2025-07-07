@@ -20,24 +20,24 @@ const HeroSection = () => {
           {/* Left Column - Hero Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                The Future of <span className="text-gradient">Crypto</span>
-                <br />
-                Starts Here
+              <h1 className="text-5xl md:text-[4.5em] font-bold leading-tight">
+                {/*  Global Digital Movement */}
+                Powering Gratitude with{" "}
+                <span className="text-gradient">Digital </span>
+                Tipping
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                Join the revolutionary blockchain project that's changing the
-                game. Fast, secure, and built for the future of decentralized
-                finance.
+                Tipping is the future of digital payments. Join the revolution
+                and start tipping in seconds.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
               <button className="btn-hero text-lg px-10 py-5 animate-glow-pulse">
-                🚀 Buy Presale Now
+                🚀 Buy Tipping Now
               </button>
               <button className="btn-ghost text-lg px-10 py-5">
-                📄 View Whitepaper
+                📄 View Tokenomics
               </button>
             </div>
 
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Countdown Timer */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-center">
             <div className="w-full max-w-md">
               <CountdownTimer />
             </div>

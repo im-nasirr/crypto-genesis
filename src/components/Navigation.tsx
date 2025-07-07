@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -85,7 +86,7 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <button className="btn-hero mt-4">Buy Presale</button>
+              <button className="btn-hero py-2 mt-4">Buy Presale</button>
             </div>
           </div>
         )}

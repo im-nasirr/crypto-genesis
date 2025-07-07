@@ -142,7 +142,7 @@ All colors MUST be HSL.
   .btn-hero {
     @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground;
     @apply hover:shadow-lg hover:shadow-primary/50 transition-all duration-300;
-    @apply border border-primary/20 rounded-xl px-8 py-4 font-semibold;
+    @apply border border-primary/20 rounded-xl px-8 py-2 font-semibold;
   }
 
   .btn-ghost {
