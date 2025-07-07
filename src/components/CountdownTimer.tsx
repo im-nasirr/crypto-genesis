@@ -11,7 +11,7 @@ const CountdownTimer = () => {
   // Calculate presale end date once using useMemo to prevent recalculation on every render
   const presaleEndDate = useMemo(() => {
     const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 30);
+    endDate.setDate(endDate.getDate() + 15);
     endDate.setHours(23, 59, 59, 999); // Set to end of day
     return endDate;
   }, []);

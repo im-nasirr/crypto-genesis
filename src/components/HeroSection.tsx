@@ -42,7 +42,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
+            {/* <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-gradient">
                   $2.4M+
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 </div>
                 <div className="text-sm text-muted-foreground">Bonus</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Countdown Timer */}
