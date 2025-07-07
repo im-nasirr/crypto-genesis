@@ -1,61 +1,68 @@
 import React from "react";
 
-import { Rocket, Target, TrendingUp, Globe, Zap, Shield } from "lucide-react";
+import {
+  Lightbulb,
+  Rocket,
+  TrendingUp,
+  Settings,
+  Globe,
+  Zap,
+} from "lucide-react";
 
 const RoadmapSection = () => {
   const roadmapPhases = [
     {
       phase: "Phase 1",
-      period: "Q4 2024",
-      title: "Project Foundation",
+      period: "Q2 2025",
+      title: "Foundation & Awareness",
       description:
-        "Token development, smart contract creation, and initial community building",
-      icon: Rocket,
-      status: "completed",
+        "Idea, Research and Whitepaper Release • Initial Marketing Campaign & Community Building • Smart Contract Development & Audit • Legal & Regulatory Framework Establishment",
+      icon: Lightbulb,
+      status: "upcoming",
     },
     {
       phase: "Phase 2",
-      period: "Q1 2025",
-      title: "Presale Launch",
+      period: "Q3 2025",
+      title: "Presale & Platform Blueprint",
       description:
-        "Public presale begins with exclusive bonuses for early investors",
-      icon: Target,
-      status: "active",
+        "ICO Launch (Presale Phases) • Strategic Partnerships with ICO Platforms • Influencer Marketing • Core Team Expansion",
+      icon: Rocket,
+      status: "upcoming",
     },
     {
       phase: "Phase 3",
-      period: "Q2 2025",
-      title: "Token Launch",
+      period: "Q4 2025",
+      title: "Official Launch",
       description:
-        "Official token launch and initial DEX listings on major platforms",
+        "Listing of TLC on Major Decentralized Exchanges • Initial Rollout of Tipping Features • User Acquisition Campaigns • Listing on CoinMarketCap, Coin Gecko and other Similar Forums",
       icon: TrendingUp,
       status: "upcoming",
     },
     {
       phase: "Phase 4",
-      period: "Q3 2025",
-      title: "Marketing & Partnerships",
+      period: "Q1 2026",
+      title: "Platform Development",
       description:
-        "Strategic partnerships, influencer collaborations, and global marketing campaigns",
-      icon: Globe,
+        "Development of MyTipLife Alpha Version • Integration of TLC Token into Platform • User Wallet Development • Early User Testing & Feedback Collection • Launch of MyTipLife Platform with TLC Integration",
+      icon: Settings,
       status: "upcoming",
     },
     {
       phase: "Phase 5",
-      period: "Q4 2025",
-      title: "CEX Listings",
+      period: "Q2 2026",
+      title: "Expansion & Growth",
       description:
-        "Major centralized exchange listings and expanded trading pairs",
-      icon: Zap,
+        "Expansion of Partnerships with Service Providers • Development of Advanced MyTipLife Features • Launch of Sports Tipping Specific Features • Further CEX Listings and Own Exchange development • Community Governance Framework Exploration",
+      icon: Globe,
       status: "upcoming",
     },
     {
       phase: "Phase 6",
-      period: "2026",
-      title: "Ecosystem Expansion",
+      period: "Q3 2026 & Beyond",
+      title: "Innovation & Global Adoption",
       description:
-        "DeFi integrations, staking rewards, and ecosystem development",
-      icon: Shield,
+        "Integration of Additional Blockchain Features • Global Market Expansion & Localization Efforts • Development of API for Third-Party Integrations • Continuous Platform Enhancements • Exploration of new use cases for TLC",
+      icon: Zap,
       status: "upcoming",
     },
   ];
