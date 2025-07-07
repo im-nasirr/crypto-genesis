@@ -26,17 +26,17 @@ const HeroSection = () => {
                 <span className="text-gradient">Digital </span>
                 Tipping
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
                 Tipping is the future of digital payments. Join the revolution
                 and start tipping in seconds.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <button className="btn-hero text-lg px-10 py-5 animate-glow-pulse">
+              <button className="btn-hero text-lg px-10 py-3 animate-glow-pulse">
                 🚀 Buy Tipping Now
               </button>
-              <button className="btn-ghost text-lg px-10 py-5">
+              <button className="btn-ghost text-lg px-10 py-3">
                 📄 View Tokenomics
               </button>
             </div>
