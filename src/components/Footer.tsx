@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaTelegram,
+  FaTwitter,
+  FaDiscord,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   const footerLinks = {
@@ -24,26 +32,30 @@ const Footer = () => {
   };
 
   const socialIcons = [
-    { name: "Telegram", icon: "📱", href: "https://t.me/MyTipLifeOfficial" },
-    { name: "Twitter", icon: "🐦", href: "https://x.com/MyTipLife" },
+    {
+      name: "Telegram",
+      icon: FaTelegram,
+      href: "https://t.me/MyTipLifeOfficial",
+    },
+    { name: "Twitter", icon: FaTwitter, href: "https://x.com/MyTipLife" },
     {
       name: "Discord",
-      icon: "💬",
+      icon: FaDiscord,
       href: "https://discord.com/invite/MyTipLife",
     },
     {
       name: "LinkedIn",
-      icon: "💼",
+      icon: FaLinkedin,
       href: "https://linkedin.com/company/MyTipLife",
     },
     {
       name: "Facebook",
-      icon: "📘",
+      icon: FaFacebook,
       href: "https://facebook.com/MyTipLifeOfficial",
     },
     {
       name: "Instagram",
-      icon: "📷",
+      icon: FaInstagram,
       href: "https://instagram.com/MyTipLife",
     },
   ];
@@ -55,28 +67,30 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">
-                  C
-                </span>
-              </div>
-              <span className="text-xl font-bold text-gradient">MyTipLife</span>
+              <img
+                src="/images/tiplifecoin-logo.png"
+                alt="Logo"
+                className="w-14 h-14"
+              />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Building the future of decentralized finance with fast, secure,
-              and scalable blockchain technology.
+              MyTipLife is a decentralized platform that allows you to earn
+              passive income by sharing your knowledge and expertise.
             </p>
             <div className="flex space-x-3">
-              {socialIcons.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 bg-secondary/50 hover:bg-primary/20 border border-border/50 hover:border-primary/30 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  title={social.name}
-                >
-                  <span className="text-lg">{social.icon}</span>
-                </a>
-              ))}
+              {socialIcons.map((social, index) => {
+                const IconComponent = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    className="w-10 h-10 bg-secondary/50 hover:bg-primary/20 border border-border/50 hover:border-primary/30 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                    title={social.name}
+                  >
+                    <IconComponent className="text-lg" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
