@@ -204,7 +204,7 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-8 mt-8">
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
-              © TCL 2025. ALL RIGHTS RESERVED.
+              © TCL 2025. ALL RIGHTS RESERVED
             </p>
           </div>
         </div>

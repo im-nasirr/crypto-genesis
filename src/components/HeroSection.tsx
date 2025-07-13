@@ -20,11 +20,13 @@ const HeroSection = () => {
           {/* Left Column - Hero Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-[4.5em] font-bold leading-tight">
+              <h1 className="text-5xl md:text-[4em] font-bold leading-tight">
                 {/*  Global Digital Movement */}
                 Tip Life Coin - <span className="text-gradient">TLC </span>{" "}
-                Currency of Gratitude
               </h1>
+              <h2 className="text-2xl md:text-3xl font-bold text-gradient">
+                Currency of Gratitude
+              </h2>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
                 Tip Life Coin (TLC) is an innovative cryptocurrency poised to
                 transform the global tipping economy

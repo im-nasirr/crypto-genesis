@@ -117,7 +117,11 @@ const FAQSection = () => {
               channels.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero">Join Telegram Community</button>
+              <button className="btn-hero">
+                <a href="https://t.me/MyTipLifeOfficial" target="_blank">
+                  Join Telegram Community
+                </a>
+              </button>
               <button className="btn-ghost">
                 <a href="#contact">Contact Us</a>
               </button>
