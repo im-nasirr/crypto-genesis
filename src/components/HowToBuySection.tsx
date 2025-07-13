@@ -15,7 +15,7 @@ const HowToBuySection = () => {
       step: "02",
       title: "Buy Solana",
       description:
-        "Buy Solana from a CEX or DEX exchange Like Binance , Coinbase Raydium, Kraken , KuCoin , Jupiter , etc.",
+        "Buy Solana from a CEX or DEX exchange Like Binance, Coinbase, Raydium, Kraken, KuCoin, Jupiter etc.",
       icon: <BsArrowLeftRight />,
     },
     {

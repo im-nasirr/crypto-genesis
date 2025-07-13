@@ -75,10 +75,11 @@ return (
       <div className="card-hero max-w-4xl mx-auto text-center">
         <h3 className="text-3xl font-bold text-gradient mb-6">Our Vision</h3>
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          Our vision is to revolutionize global tipping through blockchain
-          technology, making gratitude instant, fair, and borderless. We aim to
-          empower fans and service workers with transparent, real-time rewards
-          in a decentralized economy.
+          TLC Coin aims to become the universal currency for tipping,
+          transcending geographical boundaries. It is designed to be used by
+          anyone, anywhere, as a token of gratitude for good service or support
+          for local artists. Our vision is to create a global community where
+          appreciation is the norm.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="btn-hero">Read Whitepaper</button>
