@@ -45,8 +45,12 @@ const RoadmapSection = () => {
       phase: "Phase 1",
       period: "Q2 2025",
       title: "Foundation & Awareness",
-      description:
-        "Idea, Research and Whitepaper Release • Initial Marketing Campaign & Community Building • Smart Contract Development & Audit • Legal & Regulatory Framework Establishment",
+      description: [
+        "Idea, Research and Whitepaper Release",
+        "Initial Marketing Campaign & Community Building",
+        "Smart Contract Development & Audit",
+        "Legal & Regulatory Framework Establishment",
+      ],
       icon: Lightbulb,
       status: "upcoming",
     },
@@ -54,8 +58,12 @@ const RoadmapSection = () => {
       phase: "Phase 2",
       period: "Q3 2025",
       title: "Presale & Platform Blueprint",
-      description:
-        "ICO Launch (Presale Phases) • Strategic Partnerships with ICO Platforms • Influencer Marketing • Core Team Expansion",
+      description: [
+        "ICO Launch (Presale Phases)",
+        "Strategic Partnerships with ICO Platforms",
+        "Influencer Marketing",
+        "Core Team Expansion",
+      ],
       icon: Rocket,
       status: "upcoming",
     },
@@ -63,8 +71,12 @@ const RoadmapSection = () => {
       phase: "Phase 3",
       period: "Q4 2025",
       title: "Official Launch",
-      description:
-        "Listing of TLC on Major Decentralized Exchanges • Initial Rollout of Tipping Features • User Acquisition Campaigns • Listing on CoinMarketCap, Coin Gecko and other Similar Forums",
+      description: [
+        "Listing of TLC on Major Decentralized Exchanges",
+        "Initial Rollout of Tipping Features",
+        "User Acquisition Campaigns",
+        "Listing on CoinMarketCap, Coin Gecko and other Similar Forums",
+      ],
       icon: TrendingUp,
       status: "upcoming",
     },
@@ -72,8 +84,13 @@ const RoadmapSection = () => {
       phase: "Phase 4",
       period: "Q1 2026",
       title: "Platform Development",
-      description:
-        "Development of MyTipLife Alpha Version • Integration of TLC Token into Platform • User Wallet Development • Early User Testing & Feedback Collection • Launch of MyTipLife Platform with TLC Integration",
+      description: [
+        "Development of MyTipLife Alpha Version",
+        "Integration of TLC Token into Platform",
+        "User Wallet Development",
+        "Early User Testing & Feedback Collection",
+        "Launch of MyTipLife Platform with TLC Integration",
+      ],
       icon: Settings,
       status: "upcoming",
     },
@@ -81,8 +98,13 @@ const RoadmapSection = () => {
       phase: "Phase 5",
       period: "Q2 2026",
       title: "Expansion & Growth",
-      description:
-        "Expansion of Partnerships with Service Providers • Development of Advanced MyTipLife Features • Launch of Sports Tipping Specific Features • Further CEX Listings and Own Exchange development • Community Governance Framework Exploration",
+      description: [
+        "Expansion of Partnerships with Service Providers",
+        "Development of Advanced MyTipLife Features",
+        "Launch of Sports Tipping Specific Features",
+        "Further CEX Listings and Own Exchange development",
+        "Community Governance Framework Exploration",
+      ],
       icon: Globe,
       status: "upcoming",
     },
@@ -90,8 +112,13 @@ const RoadmapSection = () => {
       phase: "Phase 6",
       period: "Q3 2026 & Beyond",
       title: "Innovation & Global Adoption",
-      description:
-        "Integration of Additional Blockchain Features • Global Market Expansion & Localization Efforts • Development of API for Third-Party Integrations • Continuous Platform Enhancements • Exploration of new use cases for TLC",
+      description: [
+        "Integration of Additional Blockchain Features",
+        "Global Market Expansion & Localization Efforts",
+        "Development of API for Third-Party Integrations",
+        "Continuous Platform Enhancements",
+        "Exploration of new use cases for TLC",
+      ],
       icon: Zap,
       status: "upcoming",
     },
@@ -230,7 +257,7 @@ const RoadmapSection = () => {
                           {phase.title}
                         </h3>
 
-                        <p
+                        <div
                           className={`text-muted-foreground leading-relaxed transition-all duration-500 transform ${
                             visibleCards.has(index)
                               ? "translate-x-0"
@@ -242,8 +269,12 @@ const RoadmapSection = () => {
                               : "0ms",
                           }}
                         >
-                          {phase.description}
-                        </p>
+                          <ul className="list-disc list-outside space-y-1">
+                            {phase.description.map((item, descIndex) => (
+                              <li key={descIndex}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
