@@ -300,6 +300,15 @@ const RoadmapSection = () => {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="card-hero max-w-4xl mx-auto">
+            {/* Logo */}
+            <div className="flex justify-center mb-6">
+              <img
+                src="/images/tiplifecoin-logo.png"
+                alt="TLC Logo"
+                className="w-16 h-16 animate-float"
+              />
+            </div>
+
             <h3 className="text-2xl font-bold text-gradient mb-4">
               Ready to Join Our Journey?
             </h3>

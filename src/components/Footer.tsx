@@ -66,12 +66,16 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 lg:gap-12 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-3 mb-4">
               <img
                 src="/images/tiplifecoin-logo.png"
-                alt="Logo"
+                alt="TLC Logo"
                 className="w-14 h-14"
               />
+              <div>
+                <h3 className="text-xl font-bold text-gradient">TLC</h3>
+                <p className="text-sm text-muted-foreground">Tip Life Coin</p>
+              </div>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               MyTipLife is a decentralized platform that allows you to earn

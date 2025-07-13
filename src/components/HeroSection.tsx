@@ -19,6 +19,15 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="text-center lg:text-left space-y-8">
+            {/* Logo */}
+            <div className="flex justify-center lg:justify-start mb-6">
+              <img
+                src="/images/tiplifecoin-logo.png"
+                alt="TLC Logo"
+                className="w-20 h-20 lg:w-24 lg:h-24 animate-float"
+              />
+            </div>
+
             <div className="space-y-4">
               <h1 className="text-5xl md:text-[4em] font-bold leading-tight">
                 {/*  Global Digital Movement */}

@@ -72,25 +72,41 @@ return (
       </div>
 
       {/* Project Vision */}
-      <div className="card-hero max-w-4xl mx-auto text-center">
-        <h3 className="text-3xl font-bold text-gradient mb-6">Our Vision</h3>
-        <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          TLC Coin aims to become the universal currency for tipping,
-          transcending geographical boundaries. It is designed to be used by
-          anyone, anywhere, as a token of gratitude for good service or support
-          for local artists. Our vision is to create a global community where
-          appreciation is the norm.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn-hero">
-            <a
-              href="/src/assets/tlc-whitepaper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read Whitepaper
-            </a>
-          </button>
+      <div className="card-hero max-w-4xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <img
+              src="/images/tiplifecoin-logo.png"
+              alt="TLC Logo"
+              className="w-24 h-24 lg:w-32 lg:h-32 mx-auto lg:mx-0"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="flex-1 text-center lg:text-left">
+            <h3 className="text-3xl font-bold text-gradient mb-6">
+              Our Vision
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              TLC Coin aims to become the universal currency for tipping,
+              transcending geographical boundaries. It is designed to be used by
+              anyone, anywhere, as a token of gratitude for good service or
+              support for local artists. Our vision is to create a global
+              community where appreciation is the norm.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button className="btn-hero">
+                <a
+                  href="/src/assets/tlc-whitepaper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Whitepaper
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

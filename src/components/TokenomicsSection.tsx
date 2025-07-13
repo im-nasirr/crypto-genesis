@@ -272,6 +272,16 @@ const TokenomicsSection = () => {
               Token Economics
             </span>
           </div>
+
+          {/* Logo */}
+          <div className="flex justify-center mb-6">
+            <img
+              src="/images/tiplifecoin-logo.png"
+              alt="TLC Logo"
+              className="w-16 h-16 opacity-80"
+            />
+          </div>
+
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Tokenomics</span>
           </h2>
