@@ -19,12 +19,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">
-                T
-              </span>
-            </div>
-            <span className="text-xl font-bold text-gradient">TipLife</span>
+            <img
+              src="/images/tiplifecoin-logo.png"
+              alt="Logo"
+              className="w-14 h-14"
+            />
           </div>
 
           {/* Desktop Navigation */}
