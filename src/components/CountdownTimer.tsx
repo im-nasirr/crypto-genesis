@@ -66,7 +66,7 @@ const CountdownTimer = () => {
   return (
     <div className="card-hero">
       <div className="text-center mb-6">
-        <p className="text-muted-foreground mb-2">
+        <p className="opacity-80 font-semibold mb-2">
           Don't miss out on this limited opportunity!
         </p>
         <h3 className="text-2xl font-bold text-gradient mb-2">
