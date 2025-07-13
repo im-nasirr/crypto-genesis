@@ -8,14 +8,93 @@ const HowToBuySection = () => {
     {
       step: "01",
       title: "Download Wallet",
-      description: "Download Phantom or Solflare wallet",
+      description: (
+        <>
+          Download{" "}
+          <a
+            href="https://phantom.com/download"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Phantom
+          </a>{" "}
+          or{" "}
+          <a
+            href="https://www.solflare.com/download/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Solflare
+          </a>{" "}
+          wallet
+        </>
+      ),
       icon: <LuDownload />,
     },
     {
       step: "02",
       title: "Buy Solana",
-      description:
-        "Buy Solana from a CEX or DEX exchange Like Binance, Coinbase, Raydium, Kraken, KuCoin, Jupiter etc.",
+      description: (
+        <>
+          Buy Solana from a CEX or DEX exchange like{" "}
+          <a
+            href="https://accounts.binance.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Binance
+          </a>
+          ,{" "}
+          <a
+            href="https://login.coinbase.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Coinbase
+          </a>
+          ,{" "}
+          <a
+            href="https://raydium.io/swap/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Raydium
+          </a>
+          ,{" "}
+          <a
+            href="https://www.kraken.com/sign-in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Kraken
+          </a>
+          ,{" "}
+          <a
+            href="https://www.kucoin.com/ucenter/signin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            KuCoin
+          </a>
+          ,{" "}
+          <a
+            href="https://jup.ag/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-accent transition-colors underline opacity-90"
+          >
+            Jupiter
+          </a>{" "}
+          etc.
+        </>
+      ),
       icon: <BsArrowLeftRight />,
     },
     {
@@ -73,9 +152,9 @@ const HowToBuySection = () => {
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <div className="text-muted-foreground leading-relaxed">
                     {step.description}
-                  </p>
+                  </div>
                 </div>
               </div>
             ))}
