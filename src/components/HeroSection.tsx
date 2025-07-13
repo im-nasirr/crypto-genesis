@@ -22,7 +22,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-[4.5em] font-bold leading-tight">
                 {/*  Global Digital Movement */}
-                Tip Life Coin - <span className="text-gradient">TLC </span>
+                Tip Life Coin - <span className="text-gradient">TLC </span>{" "}
                 Currency of Gratitude
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
