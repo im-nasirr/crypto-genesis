@@ -401,7 +401,7 @@ const TokenomicsSection = () => {
             </div>
 
             {/* Distribution Breakdown */}
-            <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
+            {/* <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
               <h4 className="text-xl font-semibold text-foreground flex items-center mb-8">
                 Distribution Breakdown
               </h4>
@@ -464,7 +464,7 @@ const TokenomicsSection = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

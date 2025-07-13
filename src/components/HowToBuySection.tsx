@@ -168,8 +168,8 @@ const HowToBuySection = () => {
                 Ready to Get Started?
               </h3>
               <p className="text-muted-foreground">
-                Join thousands of early supporters who are powering the future
-                of digital tipping and gratitude on blockchain
+                As part of our ICO presale, we aim to raise $20 million by
+                offering 100 million TLC Coins, each priced at $0.20.
               </p>
 
               <div className="space-y-4">
@@ -178,28 +178,28 @@ const HowToBuySection = () => {
                     Current Price
                   </div>
                   <div className="text-2xl font-bold text-gradient">
-                    1 SOL = 1,000 TLC Tokens
+                    $0.20 Price Per Coin
                   </div>
                 </div>
 
-                <div className="bg-accent/10 rounded-lg p-4 border border-accent/30">
+                {/* <div className="bg-accent/10 rounded-lg p-4 border border-accent/30">
                   <div className="text-sm text-accent mb-1">Presale Bonus</div>
                   <div className="text-xl font-bold text-accent">
                     +200% Extra TLC Tokens!
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex flex-col space-y-3">
                 <button className="btn-hero text-lg py-4">
                   <a href="#home">Start Buying Now</a>
                 </button>
-                <button className="btn-ghost">Watch Tutorial Video</button>
+                {/* <button className="btn-ghost">Watch Tutorial Video</button> */}
               </div>
 
-              <div className="text-xs text-muted-foreground">
+              {/* <div className="text-xs text-muted-foreground">
                 Minimum purchase: 1 SOL • Maximum purchase: 100 SOL
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

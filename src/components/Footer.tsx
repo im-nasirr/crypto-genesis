@@ -74,8 +74,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              MyTipLife is a decentralized platform that allows you to earn
-              passive income by sharing your knowledge and expertise.
+              Tip Life Coin (TLC) is an innovative cryptocurrency poised to
+              transform the global tipping economy
             </p>
             <div className="flex space-x-3">
               {socialIcons.map((social, index) => {

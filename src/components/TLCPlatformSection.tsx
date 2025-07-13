@@ -18,7 +18,7 @@ const TLCPlatformSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient pb-8">
-            TLC Tipping Platform
+            Tipping Platform
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Empowering tipped workers through innovative technology
@@ -55,7 +55,7 @@ const TLCPlatformSection = () => {
 
               <p className="text-muted-foreground leading-relaxed">
                 <span className="text-primary font-semibold">
-                  MyTipLife.com
+                  <a href="https://mytiplife.com">MyTipLife.com</a>
                 </span>{" "}
                 is a revolutionary social network that empowers tipped workers
                 to take control of their careers, build meaningful
@@ -65,6 +65,8 @@ const TLCPlatformSection = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Join us in creating a vibrant, gratitude-driven culture where
                 tipped workers can shine and be recognized for their hard work.
+                <br />
+                <b>Read the white paper to uncover our core features</b>
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">

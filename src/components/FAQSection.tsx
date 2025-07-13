@@ -10,28 +10,24 @@ const FAQSection = () => {
       answer:
         "Tip Life Coin (TLC) is a Solana-based cryptocurrency designed to revolutionize the global tipping economy. It enables fast, low-cost, and secure peer-to-peer tipping, especially in sports and service industries.",
     },
+
     {
-      question: "2. How to buy TLC?",
-      answer:
-        "Download a Solana wallet like Phantom or Solflare, buy SOL from an exchange (e.g., Binance, Coinbase), transfer it to your wallet, then use the TLC website to connect your wallet and purchase TLC.",
-    },
-    {
-      question: "3. How to track Progress?",
+      question: "2. How to track Progress?",
       answer:
         "Follow us on the links provided on this TLC website to see what is happening and what progress has been made. We will provide continuous updates on the TLC website and all available forms of social media",
     },
     {
-      question: "4. How is TLC different from other cryptocurrencies?",
+      question: "3. How is TLC different from other cryptocurrencies?",
       answer:
         "Unlike general-purpose tokens, TLC is purpose-built for tipping. It addresses inefficiencies in traditional tipping systems by offering instant, transparent, and affordable transactions through the MyTipLife platform.",
     },
     {
-      question: "5. Why was Solana chosen as the blockchain for TLC?",
+      question: "4. Why was Solana chosen as the blockchain for TLC?",
       answer:
         "Solana offers extremely fast transaction speeds (up to 65,000 TPS), sub-second finality, low fees, and energy efficiency—making it ideal for high-volume, micro-transaction environments like tipping.",
     },
     {
-      question: "6. What are the use cases for TLC tokens?",
+      question: "5. What are the use cases for TLC tokens?",
       answer:
         "TLC tokens can be used for tipping, redeemed for products or services in the MyTipLife ecosystem, used for governance voting, and in the future may support staking and liquidity rewards.",
     },

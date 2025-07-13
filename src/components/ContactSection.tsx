@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FaTelegram, FaTwitter, FaDiscord } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -29,25 +31,25 @@ const ContactSection = () => {
   const socialLinks = [
     {
       name: "Telegram",
-      icon: "📱",
+      icon: <FaTelegram className="text-xl" />,
       url: "https://t.me/MyTipLifeOfficial",
       label: "@MyTipLifeOfficial",
     },
     {
       name: "Twitter",
-      icon: "🐦",
+      icon: <FaTwitter className="text-xl" />,
       url: "https://x.com/MyTipLife",
       label: "@MyTipLife",
     },
     {
       name: "Discord",
-      icon: "💬",
+      icon: <FaDiscord className="text-xl" />,
       url: "https://discord.com/invite/MyTipLife",
       label: "discord.com/invite/MyTipLife",
     },
     {
       name: "Email",
-      icon: "📧",
+      icon: <HiOutlineMail className="text-xl" />,
       url: "mailto:info@mytiplife.com",
       label: "info@mytiplife.com",
     },
