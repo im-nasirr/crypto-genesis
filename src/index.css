@@ -204,4 +204,11 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(180deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
 }
