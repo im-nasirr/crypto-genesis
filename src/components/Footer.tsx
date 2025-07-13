@@ -12,7 +12,7 @@ const Footer = () => {
   const footerLinks = {
     project: [
       { label: "About", href: "#about" },
-      { label: "Whitepaper", href: "#" },
+      { label: "Whitepaper", href: "/src/assets/tlc-whitepaper.pdf" },
       { label: "Roadmap", href: "#" },
     ],
     presale: [
@@ -103,6 +103,10 @@ const Footer = () => {
                   <a
                     href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    {...(link.label === "Whitepaper" && {
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })}
                   >
                     {link.label}
                   </a>

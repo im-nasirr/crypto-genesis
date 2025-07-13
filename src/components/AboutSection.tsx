@@ -82,7 +82,15 @@ return (
           appreciation is the norm.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn-hero">Read Whitepaper</button>
+          <button className="btn-hero">
+            <a
+              href="/src/assets/tlc-whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Whitepaper
+            </a>
+          </button>
         </div>
       </div>
     </div>

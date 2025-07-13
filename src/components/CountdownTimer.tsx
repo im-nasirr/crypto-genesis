@@ -64,7 +64,7 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <div className="card-hero">
+    <div className="card-hero" id="hero">
       <div className="text-center mb-6">
         <p className="opacity-80 font-semibold mb-2">
           Don't miss out on this limited opportunity!
@@ -92,7 +92,15 @@ const CountdownTimer = () => {
 
       <div className="flex flex-col sm:flex-row gap-4">
         <button className="btn-hero flex-1">Join Presale Now</button>
-        <button className="btn-ghost flex-1">Read Whitepaper</button>
+        <button className="btn-ghost flex-1">
+          <a
+            href="/src/assets/tlc-whitepaper.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Whitepaper
+          </a>
+        </button>
       </div>
       <p className="text-center text-muted-foreground mt-5">
         Join our community
