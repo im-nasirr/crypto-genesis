@@ -66,12 +66,12 @@ const CountdownTimer = () => {
   return (
     <div className="card-hero">
       <div className="text-center mb-6">
+        <p className="text-muted-foreground mb-2">
+          Don't miss out on this limited opportunity!
+        </p>
         <h3 className="text-2xl font-bold text-gradient mb-2">
           Presale Starts in
         </h3>
-        <p className="text-muted-foreground">
-          Don't miss out on this limited opportunity!
-        </p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">

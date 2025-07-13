@@ -366,7 +366,7 @@ const TokenomicsSection = () => {
                   { label: "Symbol", value: "TLC", icon: "🔤" },
                   { label: "Total Supply", value: "200M TLC", icon: "📊" },
                   { label: "Blockchain", value: "Solana", icon: "⚡" },
-                  { label: "Standard", value: "SPL", icon: "🛡️" },
+                  // { label: "Standard", value: "SPL", icon: "🛡️" },
                 ].map((detail, index) => (
                   <div
                     key={index}
