@@ -400,71 +400,45 @@ const TokenomicsSection = () => {
               </div>
             </div>
 
-            {/* Distribution Breakdown */}
-            {/* <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
+            {/* TLC Presale */}
+            <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-2xl">
               <h4 className="text-xl font-semibold text-foreground flex items-center mb-8">
-                Distribution Breakdown
+                TLC Presale
               </h4>
-              <div className="space-y-6">
-                {tokenomicsData.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`p-5 rounded-xl border transition-all duration-300 cursor-pointer ${
-                      hoveredSegment === index
-                        ? "bg-secondary/30 border-primary/30 shadow-lg"
-                        : "bg-secondary/10 border-border/30 hover:bg-secondary/20"
-                    }`}
-                    onMouseEnter={() => setHoveredSegment(index)}
-                    onMouseLeave={() => setHoveredSegment(null)}
-                  >
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center space-x-3">
-                        <div
-                          className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                            hoveredSegment === index ? "shadow-lg" : ""
-                          }`}
-                          style={{
-                            backgroundColor: item.color,
-                            boxShadow:
-                              hoveredSegment === index
-                                ? `0 0 15px ${item.color}50`
-                                : "none",
-                          }}
-                        ></div>
-                        <span className="font-semibold text-foreground">
-                          {item.label}
-                        </span>
-                      </div>
-                      <div className="text-right">
-                        <div className="font-bold text-lg text-primary">
-                          {item.percentage}%
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {item.amount} TLC
-                        </div>
-                      </div>
-                    </div>
-                    <div className="relative w-full bg-muted/50 rounded-full h-2 overflow-hidden">
-                      <div
-                        className={`h-2 rounded-full transition-all duration-1000 ease-out relative ${
-                          isVisible ? "opacity-100" : "opacity-0"
-                        }`}
-                        style={{
-                          width: isVisible ? `${item.percentage}%` : "0%",
-                          backgroundColor: item.color,
-                          boxShadow: `0 0 10px ${item.color}30`,
-                        }}
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
-                      </div>
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-3 opacity-70 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
+
+              {/* Presale Details - Row Cards */}
+              <div className="space-y-4">
+                {/* ICO Presale Target */}
+                <div className="flex justify-between items-center p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-primary/20">
+                  <span className="text-muted-foreground">
+                    ICO Presale Target
+                  </span>
+                  <span className="font-semibold text-primary">$20M</span>
+                </div>
+
+                {/* Total TLC Coins */}
+                <div className="flex justify-between items-center p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-primary/20">
+                  <span className="text-muted-foreground">Total TLC Coins</span>
+                  <span className="font-semibold text-primary">100M</span>
+                </div>
+
+                {/* Price Per Coin */}
+                <div className="flex justify-between items-center p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-primary/20">
+                  <span className="text-muted-foreground">Price Per Coin</span>
+                  <span className="font-semibold text-primary">$0.20</span>
+                </div>
+
+                {/* Presale Duration */}
+                <div className="flex justify-between items-center p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-primary/20">
+                  <span className="text-muted-foreground">
+                    Presale Duration
+                  </span>
+                  <span className="font-semibold text-primary">20 Days</span>
+                </div>
+
+                {/* Visit Website */}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
