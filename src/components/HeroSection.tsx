@@ -36,7 +36,7 @@ const HeroSection = () => {
                 🚀 Buy Tipping Now
               </button>
               <button className="btn-ghost text-lg px-10 py-3">
-                📄 View Tokenomics
+                <a href="#tokenomics">📄 View Tokenomics</a>
               </button>
             </div>
 
