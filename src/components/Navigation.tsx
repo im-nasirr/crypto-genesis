@@ -9,6 +9,7 @@ const Navigation = () => {
     { href: "#about", label: "About" },
     { href: "#how-to-buy", label: "How to Buy" },
     { href: "#tokenomics", label: "Tokenomics" },
+    { href: "#tlc-platform", label: "TLC Platform" },
     { href: "#faq", label: "FAQ" },
     { href: "#contact", label: "Contact" },
   ];

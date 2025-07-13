@@ -9,6 +9,7 @@ import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import RoadmapSection from "../components/RoadmapSection";
+import TLCPlatformSection from "../components/TLCPlatformSection";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
         <HowToBuySection />
         <TokenomicsSection />
         <RoadmapSection />
+        <TLCPlatformSection />
         <FAQSection />
         <ContactSection />
       </main>
