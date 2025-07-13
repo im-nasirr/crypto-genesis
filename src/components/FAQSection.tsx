@@ -118,7 +118,9 @@ const FAQSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-hero">Join Telegram Community</button>
-              <button className="btn-ghost">Contact Support</button>
+              <button className="btn-ghost">
+                <a href="#contact">Contact Us</a>
+              </button>
             </div>
           </div>
         </div>
