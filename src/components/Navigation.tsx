@@ -7,11 +7,12 @@ const Navigation = () => {
   const navItems = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
+    { href: "#audit", label: "Audit" },
     { href: "#how-to-buy", label: "How to Buy" },
     { href: "#tokenomics", label: "Tokenomics" },
     { href: "#tlc-platform", label: "Tipping Platform" },
     { href: "#faq", label: "FAQ" },
-    { href: "audit", label: "Audit" },
+
     { href: "#contact", label: "Contact" },
   ];
 

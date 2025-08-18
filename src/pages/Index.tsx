@@ -3,6 +3,7 @@ import ScrollingBanner from "../components/ScrollingBanner";
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import AuditSection from "../components/AuditSection";
 import HowToBuySection from "../components/HowToBuySection";
 import TokenomicsSection from "../components/TokenomicsSection";
 import FAQSection from "../components/FAQSection";
@@ -19,6 +20,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <AuditSection />
         <HowToBuySection />
         <TokenomicsSection />
         <RoadmapSection />
