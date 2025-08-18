@@ -11,6 +11,7 @@ const Navigation = () => {
     { href: "#tokenomics", label: "Tokenomics" },
     { href: "#tlc-platform", label: "Tipping Platform" },
     { href: "#faq", label: "FAQ" },
+    { href: "audit", label: "Audit" },
     { href: "#contact", label: "Contact" },
   ];
 

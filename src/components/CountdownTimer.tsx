@@ -17,7 +17,7 @@ interface TimeLeft {
 const CountdownTimer = () => {
   const presaleEndDate = useMemo(() => {
     const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 20);
+    endDate.setDate(endDate.getDate() + 14);
     endDate.setHours(23, 59, 59, 999);
     return endDate;
   }, []);
