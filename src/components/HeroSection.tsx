@@ -44,10 +44,12 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-6">
               <button className="btn-hero text-lg px-10 py-3 animate-glow-pulse">
-                🚀 Buy Tipping Now
+                🚀 Buy TLC
               </button>
               <button className="btn-ghost text-lg px-10 py-3">
-                <a href="#tokenomics">📄 View Tokenomics</a>
+                <a href="https://www.cyberscope.io/audits/8c-tlc">
+                  📄 View Tokenomics
+                </a>
               </button>
             </div>
 

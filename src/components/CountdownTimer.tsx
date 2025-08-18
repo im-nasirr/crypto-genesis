@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { FaTelegram, FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
+import {
+  FaTelegram,
+  FaTwitter,
+  FaInstagram,
+  FaDiscord,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 interface TimeLeft {
   days: number;
@@ -109,23 +115,28 @@ const CountdownTimer = () => {
       {/* Join our community */}
       <div className="flex justify-center mt-2 flex-wrap gap-4">
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://x.com/MyTipLife">
+          <a href="https://x.com/tiplifecoin?s=21">
             <FaSquareXTwitter />
           </a>
         </button>
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://t.me/MyTipLifeOfficial">
+          <a href="https://t.me/+f7R_K3d5vF8yNjVh">
             <FaTelegram />
           </a>
         </button>
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://discord.com/invite/MyTipLife">
+          <a href="https://discord.com/channels/@tiplifecoin">
             <FaDiscord />
           </a>
         </button>
         <button className="btn-ghost text-2xl border-none">
-          <a href="https://instagram.com/MyTipLife">
+          <a href="https://www.instagram.com/tiplifecoin/">
             <FaInstagram />
+          </a>
+        </button>
+        <button className="btn-ghost text-2xl border-none">
+          <a href="https://www.youtube.com/@TipLifeCoin">
+            <FaYoutube />
           </a>
         </button>
       </div>

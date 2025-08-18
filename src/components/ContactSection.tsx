@@ -1,7 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { FaTelegram, FaTwitter, FaDiscord } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import {
+  FaTelegram,
+  FaTwitter,
+  FaDiscord,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -32,26 +37,32 @@ const ContactSection = () => {
     {
       name: "Telegram",
       icon: <FaTelegram className="text-xl" />,
-      url: "https://t.me/MyTipLifeOfficial",
-      label: "@MyTipLifeOfficial",
+      url: "https://t.me/+f7R_K3d5vF8yNjVh",
+      label: "Join our Telegram",
     },
     {
       name: "Twitter",
       icon: <FaTwitter className="text-xl" />,
-      url: "https://x.com/MyTipLife",
-      label: "@MyTipLife",
+      url: "https://x.com/tiplifecoin?s=21",
+      label: "@tiplifecoin",
     },
     {
       name: "Discord",
       icon: <FaDiscord className="text-xl" />,
-      url: "https://discord.com/invite/MyTipLife",
-      label: "discord.com/invite/MyTipLife",
+      url: "https://discord.com/channels/@tiplifecoin",
+      label: "@tiplifecoin",
     },
     {
-      name: "Email",
-      icon: <HiOutlineMail className="text-xl" />,
-      url: "mailto:info@mytiplife.com",
-      label: "info@mytiplife.com",
+      name: "Instagram",
+      icon: <FaInstagram className="text-xl" />,
+      url: "https://www.instagram.com/tiplifecoin/",
+      label: "@tiplifecoin",
+    },
+    {
+      name: "YouTube",
+      icon: <FaYoutube className="text-xl" />,
+      url: "https://www.youtube.com/@TipLifeCoin",
+      label: "@TipLifeCoin",
     },
   ];
 

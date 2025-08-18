@@ -3,9 +3,8 @@ import {
   FaTelegram,
   FaTwitter,
   FaDiscord,
-  FaLinkedin,
-  FaFacebook,
   FaInstagram,
+  FaYoutube,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -24,10 +23,11 @@ const Footer = () => {
       { label: "Contact", href: "#contact" },
     ],
     community: [
-      { label: "Telegram", href: "https://t.me/MyTipLifeOfficial" },
-      { label: "Twitter", href: "https://x.com/MyTipLife" },
-      { label: "Discord", href: "https://discord.com/invite/MyTipLife" },
-      { label: "Facebook", href: "https://facebook.com/MyTipLifeOfficial" },
+      { label: "Telegram", href: "https://t.me/+f7R_K3d5vF8yNjVh" },
+      { label: "Twitter", href: "https://x.com/tiplifecoin?s=21" },
+      { label: "Discord", href: "https://discord.com/channels/@tiplifecoin" },
+      { label: "Instagram", href: "https://www.instagram.com/tiplifecoin/" },
+      { label: "YouTube", href: "https://www.youtube.com/@TipLifeCoin" },
     ],
   };
 
@@ -35,28 +35,27 @@ const Footer = () => {
     {
       name: "Telegram",
       icon: FaTelegram,
-      href: "https://t.me/MyTipLifeOfficial",
+      href: "https://t.me/+f7R_K3d5vF8yNjVh",
     },
-    { name: "Twitter", icon: FaTwitter, href: "https://x.com/MyTipLife" },
+    {
+      name: "Twitter",
+      icon: FaTwitter,
+      href: "https://x.com/tiplifecoin?s=21",
+    },
     {
       name: "Discord",
       icon: FaDiscord,
-      href: "https://discord.com/invite/MyTipLife",
-    },
-    {
-      name: "LinkedIn",
-      icon: FaLinkedin,
-      href: "https://linkedin.com/company/MyTipLife",
-    },
-    {
-      name: "Facebook",
-      icon: FaFacebook,
-      href: "https://facebook.com/MyTipLifeOfficial",
+      href: "https://discord.com/channels/@tiplifecoin",
     },
     {
       name: "Instagram",
       icon: FaInstagram,
-      href: "https://instagram.com/MyTipLife",
+      href: "https://www.instagram.com/tiplifecoin/",
+    },
+    {
+      name: "YouTube",
+      icon: FaYoutube,
+      href: "https://www.youtube.com/@TipLifeCoin",
     },
   ];
 

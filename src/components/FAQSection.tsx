@@ -112,7 +112,7 @@ const FAQSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-hero">
-                <a href="https://t.me/MyTipLifeOfficial" target="_blank">
+                <a href="https://t.me/+f7R_K3d5vF8yNjVh" target="_blank">
                   Join Telegram Community
                 </a>
               </button>
