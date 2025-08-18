@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const TokenomicsSection = () => {
   const [hoveredSegment, setHoveredSegment] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const tokenomicsData = [
     {
@@ -41,6 +42,22 @@ const TokenomicsSection = () => {
     }, 300);
     return () => clearTimeout(timer);
   }, []);
+
+  const handleCopyAddress = async () => {
+    try {
+      await navigator.clipboard.writeText(
+        "52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9"
+      );
+      setIsCopied(true);
+
+      // Reset the icon back to copy after 2 seconds
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
 
   // SVG Pie Chart Component
   const PieChart = ({ data, size = 340 }) => {
@@ -376,11 +393,6 @@ const TokenomicsSection = () => {
                   { label: "Symbol", value: "TLC", icon: "🔤" },
                   { label: "Total Supply", value: "200M TLC", icon: "📊" },
                   { label: "Blockchain", value: "Solana", icon: "⚡" },
-                  {
-                    label: "Token Address",
-                    value: "52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9",
-                    icon: "🔗",
-                  },
                 ].map((detail, index) => (
                   <div
                     key={index}
@@ -397,6 +409,64 @@ const TokenomicsSection = () => {
                     </span>
                   </div>
                 ))}
+
+                {/* Token Address - Special Layout */}
+                <div className="p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 group border border-transparent hover:border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-lg">🔗</span>
+                    <span className="text-muted-foreground">Token Address</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-secondary/40 rounded-lg p-3">
+                    <span
+                      className="font-mono text-sm text-primary break-all leading-relaxed flex-1"
+                      title="52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9"
+                    >
+                      <span className="hidden sm:inline">
+                        52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9
+                      </span>
+                      <span className="sm:hidden">52Lmwo8u...WDJ33a9</span>
+                    </span>
+                    <button
+                      onClick={handleCopyAddress}
+                      className={`flex-shrink-0 p-2 transition-all duration-300 rounded-md ${
+                        isCopied
+                          ? "text-green-500 bg-green-500/10"
+                          : "text-muted-foreground hover:text-primary hover:bg-primary/10"
+                      }`}
+                      title={isCopied ? "Copied!" : "Copy to clipboard"}
+                    >
+                      {isCopied ? (
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                          />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
