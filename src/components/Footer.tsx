@@ -17,6 +17,7 @@ const Footer = () => {
     presale: [
       { label: "How to Buy", href: "#how-to-buy" },
       { label: "Tokenomics", href: "#tokenomics" },
+      { label: "Audit", href: "#audit" },
     ],
     support: [
       { label: "FAQ", href: "#faq" },

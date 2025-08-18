@@ -181,25 +181,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="card-hero text-center">
-              <h4 className="text-lg font-semibold text-gradient mb-3">
-                Join Our Newsletter
-              </h4>
-              <p className="text-sm text-muted-foreground mb-4">
-                Stay updated with the latest news, developments, and exclusive
-                offers.
-              </p>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-1 px-3 py-2 bg-input border border-border rounded-lg text-sm focus:ring-2 focus:ring-primary focus:border-transparent text-foreground placeholder-muted-foreground"
-                />
-                <button className="btn-hero px-6 py-2 text-sm">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>

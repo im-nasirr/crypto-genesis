@@ -82,12 +82,12 @@ const TLCPlatformSection = () => {
                 </Button>
                 <Button asChild variant="outline">
                   <a
-                    href="https://mytiplife.com"
+                    href="https://www.mytiptown.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit MyTipLife.com
+                    Visit www.mytiptown.com
                   </a>
                 </Button>
               </div>

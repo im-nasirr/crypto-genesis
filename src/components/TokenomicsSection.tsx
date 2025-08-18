@@ -7,32 +7,39 @@ const TokenomicsSection = () => {
 
   const tokenomicsData = [
     {
-      label: "ICO Sale",
-      percentage: 50,
+      label: "TLC Presale",
+      percentage: 45,
       color: "#FF8A50", // Orange
-      amount: "50M",
-      description: "Funds raised during the Initial Coin Offering phase",
+      amount: "90M",
+      description: "Initial presale offering for early investors and community",
     },
     {
       label: "Team and Advisors",
       percentage: 15,
       color: "#FFD700", // Yellow
-      amount: "15M",
+      amount: "30M",
       description: "Reserved for core team and strategic advisors",
     },
     {
       label: "Marketing and Development",
-      percentage: 20,
+      percentage: 15,
       color: "#FF69B4", // Pink
-      amount: "20M",
+      amount: "30M",
       description: "Marketing campaigns and platform development",
     },
     {
       label: "Reserve Fund",
       percentage: 15,
       color: "#FF4444", // Red
-      amount: "15M",
+      amount: "30M",
       description: "Emergency reserves and future opportunities",
+    },
+    {
+      label: "Referrals and Rewards",
+      percentage: 10,
+      color: "#00CED1", // Dark Turquoise
+      amount: "20M",
+      description: "Community referral programs and user rewards",
     },
   ];
 
@@ -483,13 +490,13 @@ const TokenomicsSection = () => {
                   <span className="text-muted-foreground">
                     ICO Presale Target
                   </span>
-                  <span className="font-semibold text-primary">$20M</span>
+                  <span className="font-semibold text-primary">$18M</span>
                 </div>
 
                 {/* Total TLC Coins */}
                 <div className="flex justify-between items-center p-4 rounded-xl bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-primary/20">
                   <span className="text-muted-foreground">Total TLC Coins</span>
-                  <span className="font-semibold text-primary">100M</span>
+                  <span className="font-semibold text-primary">90M</span>
                 </div>
 
                 {/* Price Per Coin */}
@@ -503,7 +510,7 @@ const TokenomicsSection = () => {
                   <span className="text-muted-foreground">
                     Presale Duration
                   </span>
-                  <span className="font-semibold text-primary">20 Days</span>
+                  <span className="font-semibold text-primary">15 Days</span>
                 </div>
 
                 {/* Visit Website */}
