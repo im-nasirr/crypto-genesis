@@ -378,7 +378,7 @@ const TokenomicsSection = () => {
                   { label: "Blockchain", value: "Solana", icon: "⚡" },
                   {
                     label: "Token Address",
-                    value: "Coming Soon",
+                    value: "52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9",
                     icon: "🔗",
                   },
                 ].map((detail, index) => (

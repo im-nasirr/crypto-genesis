@@ -38,7 +38,7 @@ const HowToBuySection = () => {
       title: "Buy Solana",
       description: (
         <>
-          Buy Solana from a CEX or DEX exchange like{" "}
+          Buy Solana, USDT or USDC from a CEX or DEX exchange Like {""}
           <a
             href="https://accounts.binance.com/"
             target="_blank"
@@ -99,22 +99,23 @@ const HowToBuySection = () => {
     },
     {
       step: "03",
-      title: "Send Solana",
-      description: "Send your Solana to your Phantom or Solflare wallet.",
+      title: "Send Solana, USDT or USDC",
+      description:
+        "Send your Solana, USDT or USDC to your Phantom or Solflare wallet.",
       icon: <LuSend />,
     },
     {
       step: "04",
       title: "Connect Wallet",
       description:
-        "Enter desired Number of TLC Coins you want to buy and click on BUY TLC button to connect your wallet.",
+        "Enter desired Number of TLC tokens you want to buy and click on BUY TLC button to connect your wallet. Connect your Solana wallet, enter your Email to get updates and your Solana wallet address (Phantom, Solflare, etc.) to receive GFI tokens.",
       icon: <FaDollarSign />,
     },
     {
       step: "05",
       title: "Confirm Transaction",
       description:
-        "Confirm transaction, TLC Coins will be securely stored in your wallet.",
+        "Confirm transaction, TLC tokens will be securely stored in your wallet.",
       icon: <MdDone />,
     },
   ];
@@ -192,7 +193,7 @@ const HowToBuySection = () => {
 
               <div className="flex flex-col space-y-3">
                 <button className="btn-hero text-lg py-4">
-                  <a href="#home">Start Buying Now</a>
+                  <a href="#home">Buy TLC</a>
                 </button>
                 {/* <button className="btn-ghost">Watch Tutorial Video</button> */}
               </div>
