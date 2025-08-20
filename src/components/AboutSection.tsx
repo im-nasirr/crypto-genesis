@@ -80,7 +80,7 @@ return (
               <h3 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
                 Our Vision
               </h3>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 TLC Coin aims to become the universal currency for tipping,
                 transcending geographical boundaries. It is designed to be used by
                 anyone, anywhere, as a token of gratitude for good service or
@@ -130,11 +130,7 @@ return (
                 </video>
               </div>
               
-              <div className="mt-6 text-center">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  From taxi drivers to delivery workers - TLC empowers all service providers with direct appreciation and fair compensation
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
