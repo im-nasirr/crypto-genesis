@@ -72,39 +72,69 @@ return (
       </div>
 
       {/* Project Vision */}
-      <div className="card-hero max-w-4xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-8">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <img
-              src="/images/tiplifecoin-logo.png"
-              alt="TLC Logo"
-              className="w-24 h-24 lg:w-32 lg:h-32 mx-auto lg:mx-0"
-            />
-          </div>
-
+      <div className="card-hero max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left">
-            <h3 className="text-3xl font-bold text-gradient mb-6">
-              Our Vision
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              TLC Coin aims to become the universal currency for tipping,
-              transcending geographical boundaries. It is designed to be used by
-              anyone, anywhere, as a token of gratitude for good service or
-              support for local artists. Our vision is to create a global
-              community where appreciation is the norm.
-            </p>
+          <div className="space-y-8">
+            <div className="text-center lg:text-left">
+              <h3 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
+                Our Vision
+              </h3>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                TLC Coin aims to become the universal currency for tipping,
+                transcending geographical boundaries. It is designed to be used by
+                anyone, anywhere, as a token of gratitude for good service or
+                support for local artists.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Our vision is to create a global community where appreciation is
+                the norm, connecting service providers with grateful customers
+                worldwide through seamless digital transactions.
+              </p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-hero">
+              <button className="btn-hero text-lg px-8 py-4">
                 <a
                   href="/src/assets/tlc-whitepaper.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Read Whitepaper
+                  📄 Read Whitepaper
                 </a>
               </button>
+            </div>
+          </div>
+
+          {/* Animation Showcase */}
+          <div className="flex justify-center">
+            <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm max-w-md w-full">
+              <div className="text-center mb-6">
+                <h4 className="text-2xl font-bold text-gradient mb-2">
+                  Global Service Network
+                </h4>
+                <p className="text-muted-foreground">
+                  Connecting service providers worldwide
+                </p>
+              </div>
+              
+              <div className="relative aspect-square mx-auto rounded-2xl overflow-hidden bg-background/50 shadow-2xl">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/animations/Uber Taxi_500x500_V1.webm" type="video/webm" />
+                </video>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  From taxi drivers to delivery workers - TLC empowers all service providers with direct appreciation and fair compensation
+                </p>
+              </div>
             </div>
           </div>
         </div>
