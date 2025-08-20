@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   FaTelegram,
   FaTwitter,
@@ -14,15 +15,78 @@ const ContactSection = () => {
     email: "",
     message: "",
   });
+  
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    alert("Thank you for your message! We'll get back to you soon.");
+    
+    // Prevent multiple submissions
+    if (isLoading || isSent) return;
+    
+    // Set loading state
+    setIsLoading(true);
+    setIsSent(false);
+    
+    // EmailJS configuration
+    const publicKey = "Ic85OxLcEbulqs2UJ";
+    const privateKey = "VwQDjHIPVWSSc-N2dn0mf";
+    const serviceId = "service_yh3w8vk";
+    const templateId = "template_ek8btth";
+    
+    emailjs.init(publicKey);
+    
+    // Prepare template parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_name: "TipLifeCoin Team",
+    };
+    
+    console.log("Sending email with params:", templateParams);
+    
+    // Send email using EmailJS
+    emailjs
+      .send(serviceId, templateId, templateParams)
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response.status, response.text);
+          setIsLoading(false);
+          setIsSent(true);
+      
+          setFormData({ name: "", email: "", message: "" });
+        
+          setTimeout(() => {
+            setIsSent(false);
+          }, 3000);
+        },
+        (error) => {
+          console.error("Failed to send email. Error details:", error);
+          setIsLoading(false);
+          
+          // More specific error messages
+          let errorMessage = "❌ Failed to send message.";
+          if (error.status === 400) {
+            errorMessage += " Please check your EmailJS configuration.";
+          } else if (error.status === 401) {
+            errorMessage += " Invalid EmailJS credentials.";
+          } else if (error.status === 404) {
+            errorMessage += " EmailJS service or template not found.";
+          } else {
+            errorMessage += ` Error: ${error.text || error.message || "Unknown error"}`;
+          }
+          
+          alert(errorMessage);
+        }
+      );
   };
+
+
+
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -146,8 +210,49 @@ const ContactSection = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn-hero w-full text-lg py-4">
-                Send Message
+              <button 
+                type="submit" 
+                disabled={isLoading || isSent}
+                className={`btn-hero w-full text-lg py-4 transition-all duration-300 ${
+                  isLoading || isSent 
+                    ? 'opacity-80 cursor-not-allowed' 
+                    : 'hover:scale-105'
+                }`}
+              >
+                {isLoading && (
+                  <span className="flex items-center justify-center gap-2">
+                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                      <circle 
+                        className="opacity-25" 
+                        cx="12" 
+                        cy="12" 
+                        r="10" 
+                        stroke="currentColor" 
+                        strokeWidth="4"
+                        fill="none"
+                      />
+                      <path 
+                        className="opacity-75" 
+                        fill="currentColor" 
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      />
+                    </svg>
+                    Sending...
+                  </span>
+                )}
+                {isSent && !isLoading && (
+                  <span className="flex items-center justify-center gap-2">
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path 
+                        fillRule="evenodd" 
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" 
+                        clipRule="evenodd" 
+                      />
+                    </svg>
+                    Sent!
+                  </span>
+                )}
+                {!isLoading && !isSent && "Send Message"}
               </button>
             </form>
           </div>
