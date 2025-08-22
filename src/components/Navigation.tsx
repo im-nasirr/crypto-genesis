@@ -10,6 +10,7 @@ const Navigation = () => {
     { href: "#audit", label: "Audit" },
     { href: "#how-to-buy", label: "How to Buy" },
     { href: "#tokenomics", label: "Tokenomics" },
+    { href: "#roadmap", label: "Roadmap" },
     { href: "#tlc-platform", label: "Tipping Platform" },
     { href: "#faq", label: "FAQ" },
 
