@@ -44,7 +44,9 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <button className="btn-hero rounded-full py-2">Buy TLC</button>
+            <button className="btn-hero rounded-full py-2">
+              <a href="#home">Buy TLC</a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
