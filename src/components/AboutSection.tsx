@@ -94,15 +94,14 @@ return (
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-hero text-lg px-8 py-4">
-                <a
-                  href="/src/assets/tlc-whitepaper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  📄 Read Whitepaper
-                </a>
-              </button>
+              <a
+                href="/src/assets/tlc-whitepaper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-hero text-lg px-8 py-4"
+              >
+                📄 Read Whitepaper
+              </a>
             </div>
           </div>
 

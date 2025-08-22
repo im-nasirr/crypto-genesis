@@ -55,24 +55,22 @@ const AuditSection = () => {
        
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-hero">
-                  <a
-                    href="/src/assets/audit-report.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Audit Report
-                  </a>
-                </button>
-                <button className="btn-ghost">
-                  <a
-                    href="https://www.cyberscope.io/audits/8c-tlc"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on Cyberscope
-                  </a>
-                </button>
+                <a
+                  href="/src/assets/audit-report.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-hero  px-10 py-3 "
+                >
+                  View Audit Report
+                </a>
+                <a
+                  href="https://www.cyberscope.io/audits/8c-tlc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-ghost"
+                >
+                  View on Cyberscope
+                </a>
               </div>
            
           

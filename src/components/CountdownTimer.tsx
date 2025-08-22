@@ -98,15 +98,14 @@ const CountdownTimer = () => {
 
       <div className="flex flex-col sm:flex-row gap-4">
         <button className="btn-hero flex-1">Join Presale Now</button>
-        <button className="btn-ghost flex-1">
-          <a
-            href="/src/assets/tlc-whitepaper.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read Whitepaper
-          </a>
-        </button>
+        <a
+          href="/src/assets/tlc-whitepaper.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-ghost flex-1"
+        >
+          Read Whitepaper
+        </a>
       </div>
       <p className="text-center text-muted-foreground mt-5">
         Join our community
@@ -114,31 +113,36 @@ const CountdownTimer = () => {
 
       {/* Join our community */}
       <div className="flex justify-center mt-2 flex-wrap gap-4">
-        <button className="btn-ghost text-2xl border-none">
-          <a href="https://x.com/tiplifecoin?s=21">
-            <FaSquareXTwitter />
-          </a>
-        </button>
-        <button className="btn-ghost text-2xl border-none">
-          <a href="https://t.me/+f7R_K3d5vF8yNjVh">
-            <FaTelegram />
-          </a>
-        </button>
-        <button className="btn-ghost text-2xl border-none">
-          <a href="https://discord.com/channels/@tiplifecoin">
-            <FaDiscord />
-          </a>
-        </button>
-        <button className="btn-ghost text-2xl border-none">
-          <a href="https://www.instagram.com/tiplifecoin/">
-            <FaInstagram />
-          </a>
-        </button>
-        <button className="btn-ghost text-2xl border-none">
-          <a href="https://www.youtube.com/@TipLifeCoin">
-            <FaYoutube />
-          </a>
-        </button>
+        <a 
+          href="https://x.com/tiplifecoin?s=21"
+          className="btn-ghost text-2xl border-none"
+        >
+          <FaSquareXTwitter />
+        </a>
+        <a 
+          href="https://t.me/+f7R_K3d5vF8yNjVh"
+          className="btn-ghost text-2xl border-none"
+        >
+          <FaTelegram />
+        </a>
+        <a 
+          href="https://discord.com/channels/@tiplifecoin"
+          className="btn-ghost text-2xl border-none"
+        >
+          <FaDiscord />
+        </a>
+        <a 
+          href="https://www.instagram.com/tiplifecoin/"
+          className="btn-ghost text-2xl border-none"
+        >
+          <FaInstagram />
+        </a>
+        <a 
+          href="https://www.youtube.com/@TipLifeCoin"
+          className="btn-ghost text-2xl border-none"
+        >
+          <FaYoutube />
+        </a>
       </div>
     </div>
   );

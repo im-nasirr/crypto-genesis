@@ -46,11 +46,12 @@ const HeroSection = () => {
               <button className="btn-hero text-lg px-10 py-3 animate-glow-pulse">
                 🚀 Buy TLC
               </button>
-              <button className="btn-ghost text-lg px-10 py-3">
-                <a href="https://www.cyberscope.io/audits/8c-tlc">
-                  📄 View Tokenomics
-                </a>
-              </button>
+              <a 
+                href="https://www.cyberscope.io/audits/8c-tlc"
+                className="btn-ghost text-lg px-10 py-3"
+              >
+                📄 View Tokenomics
+              </a>
             </div>
 
             {/* Stats */}

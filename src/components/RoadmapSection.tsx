@@ -319,15 +319,14 @@ const RoadmapSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-hero">Join Presale Now</button>
-              <button className="btn-ghost">
-                <a
-                  href="/src/assets/tlc-whitepaper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read Whitepaper
-                </a>
-              </button>
+              <a
+                href="/src/assets/tlc-whitepaper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost"
+              >
+                Read Whitepaper
+              </a>
             </div>
           </div>
         </div>

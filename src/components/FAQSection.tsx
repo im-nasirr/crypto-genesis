@@ -111,14 +111,16 @@ const FAQSection = () => {
               channels.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero">
-                <a href="https://t.me/+f7R_K3d5vF8yNjVh" target="_blank">
-                  Join Telegram Community
-                </a>
-              </button>
-              <button className="btn-ghost">
-                <a href="#contact">Contact Us</a>
-              </button>
+              <a
+                href="https://t.me/+f7R_K3d5vF8yNjVh"
+                target="_blank"
+                className="btn-hero  px-10 py-3 "
+              >
+                Join Telegram Community
+              </a>
+              <a href="#contact" className="btn-ghost  px-10 py-3 ">
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
