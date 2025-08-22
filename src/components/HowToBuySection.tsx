@@ -192,9 +192,9 @@ const HowToBuySection = () => {
               </div>
 
               <div className="flex flex-col space-y-3">
-                <button className="btn-hero text-lg py-4">
-                  <a href="#home">Buy TLC</a>
-                </button>
+                <a href="#home" className="btn-hero text-lg py-4">
+                  Buy TLC
+                </a>
                 {/* <button className="btn-ghost">Watch Tutorial Video</button> */}
               </div>
 
