@@ -11,6 +11,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import RoadmapSection from "../components/RoadmapSection";
 import TLCPlatformSection from "../components/TLCPlatformSection";
+import ReferralSection from "../components/ReferralSection";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
         <AuditSection />
         <HowToBuySection />
         <TokenomicsSection />
+        <ReferralSection />
         <RoadmapSection />
         <TLCPlatformSection />
         <FAQSection />
