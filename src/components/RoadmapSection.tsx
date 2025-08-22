@@ -60,7 +60,7 @@ const RoadmapSection = () => {
       title: "Presale & Platform Blueprint",
       description: [
         "ICO Launch (Presale Phases)",
-        "Strategic Partnerships with ICO Platforms",
+        "TLC Referral System Development",
         "Influencer Marketing",
         "Core Team Expansion",
       ],
@@ -72,6 +72,7 @@ const RoadmapSection = () => {
       period: "Q4 2025",
       title: "Official Launch",
       description: [
+        "Creating TLC Staking DApp Development",
         "Listing of TLC on Major Decentralized Exchanges",
         "Initial Rollout of Tipping Features",
         "User Acquisition Campaigns",
