@@ -106,25 +106,7 @@ const ReferralSection = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center">
-          <div className="card-hero max-w-2xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Start <span className="text-gradient">Earning Today</span>
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Join the TLC referral program and start earning rewards while building our community together.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero text-lg px-8 py-4 animate-glow-pulse">
-                🎯 Get Your Referral Link
-              </button>
-              <button className="btn-ghost text-lg px-8 py-4">
-                📊 Track Your Earnings
-              </button>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );
