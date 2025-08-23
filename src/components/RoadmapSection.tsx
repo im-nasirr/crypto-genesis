@@ -335,10 +335,8 @@ const RoadmapSection = () => {
 
               {/* Sports Animation */}
               <div className="flex justify-center">
-                <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm max-w-sm w-full">
-                  <div className="text-center mb-6">
-                    Sports Tipping Features Coming Soon
-                  </div>
+                <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-6 border border-primary/20 backdrop-blur-sm max-w-sm w-full">
+              
                   <div className="relative aspect-square mx-auto rounded-2xl overflow-hidden bg-background/50 shadow-2xl">
                     <video
                       autoPlay
