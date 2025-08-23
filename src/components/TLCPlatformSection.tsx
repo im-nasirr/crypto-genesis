@@ -55,7 +55,7 @@ const TLCPlatformSection = () => {
 
               <p className="text-muted-foreground leading-relaxed">
                 <span className="text-primary font-semibold">
-                  <a href="https://mytiplife.com">MyTipLife.com</a>
+                  <a href="https://www.mytiptown.com/ ">MyTipTown.com</a>
                 </span>{" "}
                 is a revolutionary social network that empowers tipped workers
                 to take control of their careers, build meaningful

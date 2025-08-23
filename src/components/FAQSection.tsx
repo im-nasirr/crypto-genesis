@@ -19,7 +19,7 @@ const FAQSection = () => {
     {
       question: "3. How is TLC different from other cryptocurrencies?",
       answer:
-        "Unlike general-purpose tokens, TLC is purpose-built for tipping. It addresses inefficiencies in traditional tipping systems by offering instant, transparent, and affordable transactions through the MyTipLife platform.",
+        "Unlike general-purpose tokens, TLC is purpose-built for tipping. It addresses inefficiencies in traditional tipping systems by offering instant, transparent, and affordable transactions through the MyTipTown platform.",
     },
     {
       question: "4. Why was Solana chosen as the blockchain for TLC?",
@@ -29,7 +29,7 @@ const FAQSection = () => {
     {
       question: "5. What are the use cases for TLC tokens?",
       answer:
-        "TLC tokens can be used for tipping, redeemed for products or services in the MyTipLife ecosystem, used for governance voting, and in the future may support staking and liquidity rewards.",
+        "TLC tokens can be used for tipping, redeemed for products or services in the MyTipTown ecosystem, used for governance voting, and in the future may support staking and liquidity rewards.",
     },
   ];
 

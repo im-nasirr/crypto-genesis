@@ -86,11 +86,11 @@ const RoadmapSection = () => {
       period: "Q1 2026",
       title: "Platform Development",
       description: [
-        "Development of MyTipLife Alpha Version",
+        "Development of MyTipTown Alpha Version",
         "Integration of TLC Token into Platform",
         "User Wallet Development",
         "Early User Testing & Feedback Collection",
-        "Launch of MyTipLife Platform with TLC Integration",
+        "Launch of MyTipTown Platform with TLC Integration",
       ],
       icon: Settings,
       status: "upcoming",
@@ -101,7 +101,7 @@ const RoadmapSection = () => {
       title: "Expansion & Growth",
       description: [
         "Expansion of Partnerships with Service Providers",
-        "Development of Advanced MyTipLife Features",
+        "Development of Advanced MyTipTown Features",
         "Launch of Sports Tipping Specific Features",
         "Further CEX Listings and Own Exchange development",
         "Community Governance Framework Exploration",

@@ -429,7 +429,14 @@ const TokenomicsSection = () => {
                       title="52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9"
                     >
                       <span className="hidden sm:inline">
-                        52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9
+                        <a
+                          target="_blank"
+                          href="https://solscan.io/token/52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9 
+"
+                        >
+                          {" "}
+                          52Lmwo8ujYNqSuzxq2SGMYJZQDHVkN6UWX6GYWDJ33a9
+                        </a>
                       </span>
                       <span className="sm:hidden">52Lmwo8u...WDJ33a9</span>
                     </span>

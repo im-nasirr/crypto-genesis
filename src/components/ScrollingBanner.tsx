@@ -3,7 +3,7 @@ import React from "react";
 const ScrollingBanner = () => {
   const scrollingTexts = [
     "🚀 Tip Life Coin",
-    "⚡ LC  Currency of Gratitude, Don't miss out on this limited opportunity! Presale will start soon. Join the TLC  community",
+    "⚡ TLC  Currency of Gratitude, Don't miss out on this limited opportunity! Presale will start soon. Join the TLC  community",
     // "💎 EARLY SUPPORTERS GET 200% BONUS TLC",
     // "🔥 TIP LIFE COIN PRESALE ENDING SOON",
     // "🌟 SOLANA-POWERED TIPPING REVOLUTION",

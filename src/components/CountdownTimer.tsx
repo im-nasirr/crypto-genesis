@@ -137,12 +137,12 @@ const CountdownTimer = () => {
         >
           <FaInstagram />
         </a>
-        <a 
+        {/* <a 
           href="https://www.youtube.com/@TipLifeCoin"
           className="btn-ghost text-2xl border-none"
         >
           <FaYoutube />
-        </a>
+        </a> */}
       </div>
     </div>
   );

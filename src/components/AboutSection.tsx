@@ -12,7 +12,7 @@ const features = [
     icon: "🏠",
     title: "The Home of Tipped Workers",
     description:
-      "MyTipLife.com creates an inclusive community where tipped workers connect, share experiences, and celebrate their economic contributions globally.",
+      "MyTipTown.com creates an inclusive community where tipped workers connect, share experiences, and celebrate their economic contributions globally.",
   },
   {
     icon: "🪙",
@@ -24,7 +24,7 @@ const features = [
     icon: "🌐",
     title: "Innovative Digital Social Network",
     description:
-      "MyTipLife.com builds vibrant online community for tipped workers, fans, and customers, fostering personalized ongoing tipping relationships.",
+      "MyTipTown.com builds vibrant online community for tipped workers, fans, and customers, fostering personalized ongoing tipping relationships.",
   },
   {
     icon: "🎯",
@@ -82,8 +82,8 @@ return (
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 TLC Coin aims to become the universal currency for tipping,
-                transcending geographical boundaries. It is designed to be used by
-                anyone, anywhere, as a token of gratitude for good service or
+                transcending geographical boundaries. It is designed to be used
+                by anyone, anywhere, as a token of gratitude for good service or
                 support for local artists.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -92,7 +92,7 @@ return (
                 worldwide through seamless digital transactions.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="/src/assets/tlc-whitepaper.pdf"
@@ -109,14 +109,10 @@ return (
           <div className="flex justify-center">
             <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm max-w-md w-full">
               <div className="text-center mb-6">
-                <h4 className="text-2xl font-bold text-gradient mb-2">
-                  Global Service Network
-                </h4>
-                <p className="text-muted-foreground">
-                  Connecting service providers worldwide
-                </p>
+                TLC Coin Serves as a universal tipping currency
+                
               </div>
-              
+
               <div className="relative aspect-square mx-auto rounded-2xl overflow-hidden bg-background/50 shadow-2xl">
                 <video
                   autoPlay
@@ -125,11 +121,12 @@ return (
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="/animations/Uber Taxi_500x500_V1.webm" type="video/webm" />
+                  <source
+                    src="/animations/Uber Taxi_500x500_V1.webm"
+                    type="video/webm"
+                  />
                 </video>
               </div>
-              
-              
             </div>
           </div>
         </div>
