@@ -108,7 +108,7 @@ const HowToBuySection = () => {
       step: "04",
       title: "Connect Wallet",
       description:
-        "Enter desired Number of TLC tokens you want to buy and click on BUY TLC button to connect your wallet. Connect your Solana wallet, enter your Email to get updates and your Solana wallet address (Phantom, Solflare, etc.) to receive GFI tokens.",
+        "Enter desired Number of TLC tokens you want to buy and click on BUY TLC button to connect your wallet. Connect your Solana wallet, enter your Email to get updates and your Solana wallet address (Phantom, Solflare, etc.) to receive TLC tokens.",
       icon: <FaDollarSign />,
     },
     {

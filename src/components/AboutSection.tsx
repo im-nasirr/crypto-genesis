@@ -72,7 +72,7 @@ return (
       </div>
 
       {/* Project Vision */}
-      <div className="card-hero max-w-6xl mx-auto">
+      <div className="card-hero max-w-6xl mx-auto" id="ourvision">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">

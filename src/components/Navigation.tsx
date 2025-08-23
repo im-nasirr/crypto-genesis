@@ -6,14 +6,14 @@ const Navigation = () => {
 
   const navItems = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
+    { href: "#ourvision", label: "About" },
     { href: "#audit", label: "Audit" },
     { href: "#how-to-buy", label: "How to Buy" },
     { href: "#tokenomics", label: "Tokenomics" },
     { href: "#referral", label: "Referral" },
     { href: "#roadmap", label: "Roadmap" },
     { href: "#tlc-platform", label: "Tipping Platform" },
-    { href: "#faq", label: "FAQ" },
+    { href: "#faq", label: "FAQs" },
 
     { href: "#contact", label: "Contact" },
   ];
