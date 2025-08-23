@@ -253,7 +253,7 @@ const ContactSection = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Message sent. TLC will contact you soon.
+                    Message sent. TLC team will contact you soon.
                   </span>
                 )}
                 {!isLoading && !isSent && "Send Message"}

@@ -300,33 +300,61 @@ const RoadmapSection = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="card-hero max-w-4xl mx-auto">
-            {/* Logo */}
-            <div className="flex justify-center mb-6">
-              <img
-                src="/images/tiplifecoin-logo.png"
-                alt="TLC Logo"
-                className="w-16 h-16 animate-float"
-              />
-            </div>
+          <div className="card-hero max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Content */}
+              <div className="space-y-6">
+                {/* Logo */}
+                <div className="flex justify-center lg:justify-start mb-6">
+                  <img
+                    src="/images/tiplifecoin-logo.png"
+                    alt="TLC Logo"
+                    className="w-16 h-16 animate-float"
+                  />
+                </div>
 
-            <h3 className="text-2xl font-bold text-gradient mb-4">
-              Ready to Join Our Journey?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Be part of the future of cryptocurrency. Join our presale now and
-              secure your position in this revolutionary project.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero">Join Presale Now</button>
-              <a
-                href="/src/assets/tlc-whitepaper.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-ghost"
-              >
-                Read Whitepaper
-              </a>
+                <h3 className="text-2xl font-bold text-gradient mb-4 text-center lg:text-left">
+                  Ready to Join Our Journey?
+                </h3>
+                <p className="text-muted-foreground mb-6 text-center lg:text-left">
+                  Be part of the future of cryptocurrency. Join our presale now and
+                  secure your position in this revolutionary project.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <button className="btn-hero">Join Presale Now</button>
+                  <a
+                    href="/src/assets/tlc-whitepaper.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-ghost"
+                  >
+                    Read Whitepaper
+                  </a>
+                </div>
+              </div>
+
+              {/* Sports Animation */}
+              <div className="flex justify-center">
+                <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm max-w-sm w-full">
+                  <div className="text-center mb-6">
+                    Sports Tipping Features Coming Soon
+                  </div>
+                  <div className="relative aspect-square mx-auto rounded-2xl overflow-hidden bg-background/50 shadow-2xl">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source
+                        src="/animations/Sports_500x500_V1.webm"
+                        type="video/webm"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
